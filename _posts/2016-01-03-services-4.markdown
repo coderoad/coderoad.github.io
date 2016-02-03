@@ -1,0 +1,12 @@
+---
+layout: default
+img: coderoad-example-3.png
+category: Services
+title: Build with Developer Tools
+description: |
+---
+  Lessons can be built using markdown & unit tests, then compiled using the coderoad-cli.
+
+  `> npm install -g coderoad-cli`
+
+  `> coderoad build tutorial.md`

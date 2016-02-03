@@ -1,0 +1,10 @@
+---
+layout: default
+img: coderoad-example-2.png
+category: Services
+title: Free & Open-Sourced
+description: |
+---
+  Build and share courses or curriculum on Github. Publish your tutorials on NPM with the prefix `coderoad-`.
+
+  `> coderoad publish coderoad-my-tutorial`
