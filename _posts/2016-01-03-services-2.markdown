@@ -1,10 +1,10 @@
 ---
 layout: default
-img: coderoad-example-1.png
+img: npm.png
 category: Services
-title: Inside of the Editor
+title: Free & Open-Sourced
 description: |
 ---
-  Atom-CodeRoad is built inside the free [Atom editor](https://atom.io), allowing you to use it alongside your favorite packages.
+  Build, share and collaborate on courses or curriculum over Github.
 
-  `> apm install atom-coderoad`
+  Publish your version controlled tutorials on NPM. Incrementally make them better with updates and pull requests.

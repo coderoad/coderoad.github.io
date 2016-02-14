@@ -1,8 +1,8 @@
 ---
 layout: default
-img: coderoad-example-0.png
+img: feedback.png
 category: Services
 title: Learn Faster
 description: |
 ---
-The science is in: people learn best by doing, with quick feedback in a real world environment. 
+The science is in: people learn best by doing, with quick feedback in a real world environment.

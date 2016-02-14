@@ -1,14 +1,16 @@
 ---
 layout: default
-img: coderoad-example-3.png
 category: Services
-title: Build with Developer Tools
+img: markdown.png
+title: Write Simply in Markdown
 description: |
 ---
-  Lessons can be built using markdown & unit tests. See an example [tutorial file ](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md) & [test file](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/01-filter.spec.js).
+  Write lessons using markdown.
+  See a [tutorial file ](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md).
 
-  Tutorial and test files can be compiled using the coderoad-cli.
+Control the editor with a simple API:
 
-  `> npm install -g coderoad-cli`
-
-  `> coderoad build tutorial.md`
+* `@import` - import another markdown file
+* `@test` - relative path to unit tests
+* `@action` - open a file, set/insert new text, etc.
+* `@hint` - an array of helpful clues

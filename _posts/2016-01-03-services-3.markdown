@@ -1,10 +1,10 @@
 ---
 layout: default
-img: coderoad-example-2.png
+img: atom-editor.png
 category: Services
-title: Free & Open-Sourced
+title: Inside of the Editor
 description: |
 ---
-  Build and share courses or curriculum on Github. Publish your tutorials on NPM with the prefix `coderoad-`.
+  Atom-CodeRoad is built inside the free [Atom Editor](https://atom.io), allowing you to use it alongside your favorite packages.
 
-  `> coderoad publish coderoad-my-tutorial`
+  `> apm install atom-coderoad`

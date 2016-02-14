@@ -1,0 +1,16 @@
+---
+layout: default
+category: Services
+img: coderoad-cli.png
+title: Compile with Coderoad-CLI
+description: |
+---
+Building tutorials is easy with the [coderoad-cli](https://github.com/coderoad/coderoad-cli).
+
+  `> npm install -g coderoad-cli`
+
+  `> coderoad create`
+
+  `> coderoad build`
+
+  `> coderoad publish`
