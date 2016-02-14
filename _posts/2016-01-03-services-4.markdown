@@ -5,7 +5,9 @@ category: Services
 title: Build with Developer Tools
 description: |
 ---
-  Lessons can be built using markdown & unit tests, then compiled using the coderoad-cli.
+  Lessons can be built using markdown & unit tests. See an example [tutorial file ](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md) & [test file](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/01-filter.spec.js).
+
+  Tutorial and test files can be compiled using the coderoad-cli.
 
   `> npm install -g coderoad-cli`
 
