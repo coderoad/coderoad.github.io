@@ -1,52 +1,224 @@
 <section id="services">
-<!-- Page Content -->
-{% for post in site.posts reversed %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
-    <div class="content-section-a">
+  <!-- Page Content -->
 
-        <div class="container">
+  <div class="content-section-b">
 
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead">{{ post.content }}</div>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
-                </div>
-            </div>
+    <div class="container">
 
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Learn Faster</h2>
+          <div class="lead">The science is in: people learn best by doing, with quick feedback in a real world environment.</div>
         </div>
-        <!-- /.container -->
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <img class="img-responsive" src="img/services/feedback.png" alt="">
+        </div>
+      </div>
 
     </div>
-    <!-- /.content-section-a -->
-    {% else %}
+    <!-- /.container -->
 
-    <div class="content-section-b">
+  </div>
+  <!-- /.content-section-a -->
 
-        <div class="container">
+  <div class="content-section-a">
 
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    <div class="lead">{{ post.content }}</div>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
-                </div>
-            </div>
+    <div class="container">
 
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Free & Open-Sourced</h2>
+          <div class="lead">Build, share and collaborate on courses or curriculum over Github. Publish your version controlled tutorials on NPM. Incrementally make them better with updates and pull requests.
+          </div>
         </div>
-        <!-- /.container -->
+        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <img class="img-responsive" src="img/services/npm.png" alt="">
+        </div>
+      </div>
 
     </div>
-    <!-- /.content-section-b -->
-    {% endif %}
-{% endfor %}
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-b -->
+  <div class="content-section-b">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Inside of the Editor</h2>
+          <div class="lead">Atom-CodeRoad is built inside the free <a href="https://atom.io">Atom Editor</a>, allowing you to use it alongside your favorite packages.</div>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <img height="250px" src="img/services/atom-editor.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
+
+  <div class="content-section-a">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-2 col-sm-push-6 col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Write in Markdown</h2>
+          <div class="lead">Write lessons using markdown. <br>
+            See a <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md">tutorial file</a>.
+            <br>
+            <br>
+            Control the editor with a simple API:
+            <br>
+            <br>
+            <br>
+            <ul>
+              <li><code>@import</code> load another markdown file</li>
+              <br>
+              <li><code>@test</code> load unit tests</li>
+              <br>
+              <li><code>@action</code> open a file, set/insert text</li>
+              <br>
+              <li><code>@hint</code> add helpful clues</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-pull-6 col-sm-6">
+          <pre><code class="language-markdown">
+# Functional School
+A trip through functional programming in Javascript.
+
+## Array Methods
+Using common built-in Javascript array methods.
+
+### Filter
+Array -> Array of items that match a condition
+
++ Write a filter condition function called `isAda`
+@test('1/01/01-filter')
+@action(open('01-filter.js'))
+@action(insert(
+```
+// return true if student name
+// matches "Ada Lovelace"
+function isAda() {
+  // write condition here
+}
+```
+))
+          </pre></code>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-b -->
+
+  <div class="content-section-b">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Build with Dev Tools</h2>
+          <div class="lead"> Write task feedback using unit tests.<br>
+            See a <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/01-filter.spec.js">complete test file</a>.
+            <br>
+            <br>
+            <br>
+            Currently supported:
+            <br>
+            <br>
+            <ul>
+              <li>Javascript: <a href="https://github.com/coderoad/mocha-coderoad">Mocha</a></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <i>We hope to support more test frameworks and programming languages in the near future.</i></div>
+        </div>
+        <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+          <pre><code class="language-js">
+describe('function isAda', function () {
+
+  it('doesn\'t exist', function () {
+    expect(isAda).to.not.be.undefined;
+  });
+
+  it('should be a function', function () {
+    expect(isAda).to.be.a('function');
+  });
+
+  it('needs to take a param', function () {
+    expect(isAda).to.have.length(1);
+  });
+
+  it('should use the full name "Ada Lovelace"', function () {
+    var regex = /Ada Lovelace/;
+    expect(!!isAda.toString().match(regex)).to.be.true;
+  });
+
+});
+          </code></pre>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-a -->
+
+  <div class="content-section-a">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          <!-- <hr class="section-heading-spacer"> -->
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Compile with Coderoad-CLI</h2>
+          <div class="lead">Building tutorials is easy with the <a href="https://github.com/coderoad/coderoad-cli">coderoad-cli</a>.
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <div class="lead">
+            <code>> npm install -g coderoad-cli</code>
+            <br>
+            <br>
+            <code>> coderoad create</code>
+            <br>
+            <br>
+            <code>> coderoad build</code>
+            <br>
+            <br>
+            <code>> coderoad publish</code>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </div>
+  <!-- /.content-section-b -->
+
+
+
 </section>
