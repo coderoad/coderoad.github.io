@@ -19,6 +19,9 @@ credits: ''
 markdown: kramdown
 permalink: pretty
 
+gems:
+  - jekyll-sitemap
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
@@ -30,6 +33,3 @@ social:
   - title: atom plugin
     icon: github
     url: https://github.com/coderoad/atom-coderoad
-
-gems:
-  - jekyll-sitemap
