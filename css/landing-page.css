@@ -71,6 +71,7 @@ h6 {
         display: block;
         margin-bottom: 20px;
         padding: 0;
+    
     }
 
     ul.intro-social-buttons > li:last-child {
@@ -198,4 +199,15 @@ pre > code {
 code {
   font-family: "FiraCode-Regular" !important;
   padding: 10px;
+}
+
+#mc_embed_signup {
+  clear: left;
+  font: 14px Lato, Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+.subscribe-label {
+    font-size: 18px;
+    font-weight: 400;
 }
