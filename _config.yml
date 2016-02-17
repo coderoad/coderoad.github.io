@@ -30,3 +30,6 @@ social:
   - title: atom plugin
     icon: github
     url: https://github.com/coderoad/atom-coderoad
+
+gems:
+  - jekyll-sitemap
