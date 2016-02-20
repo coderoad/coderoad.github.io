@@ -4,12 +4,10 @@
 
 url: http://coadroad.io
 title: CodeRoad
-email: shawn.j.mckay@gmail.com
+email: coderoadapp@gmail.com
 author: Shawn McKay
 description: > # "Free interactive coding tutorials inside of the Atom editor. Build your own tutorials
 using the coderoad-cli and tools developers already know: markdown and unit tests.
-copyright: 'Copyright &copy; 2016 Shawn McKay, Vancouver, BC. All Rights Reserved.'
-credits: ''
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -30,6 +28,8 @@ social:
   - title: coderoad CLI
     icon: github
     url: https://github.com/coderoad/coderoad-cli
+    purpose: Make
   - title: atom plugin
     icon: github
     url: https://github.com/coderoad/atom-coderoad
+    purpose: Play
