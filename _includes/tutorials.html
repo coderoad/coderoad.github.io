@@ -1,7 +1,7 @@
 <section id="tutorials" class="container content-section text-center">
   <div class="row content-section-b">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-6">
         <h2>Try a Tutorial</h2>
         <ul class="list-inline intro-social-buttons">
           {% for tutorial in site.tutorials %}
@@ -16,6 +16,21 @@
           {% endfor %}
         </ul>
       </div>
+
+      <div class="col-lg-6">
+        <h2>Make Your Own</h2>
+        <ul class="list-inline intro-social-buttons">
+
+          <li>
+            <!-- <h3>{{ social.purpose }}</h3> -->
+            <a href="/build" class="btn btn-default btn-lg"><i class="fa fa-road fa-fw"></i> <span class="network-name">Create a Tutorial</span></a>
+            <br>
+            <h5>Learn how to build your own interactive tutorials for CodeRoad</h5>
+            <h5>using Markdown & Unit Tests</h5>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
