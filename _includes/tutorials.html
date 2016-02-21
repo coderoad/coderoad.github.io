@@ -9,9 +9,11 @@
             <!-- <h3>{{ social.purpose }}</h3> -->
             <a href="{{ tutorial.url }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-{{ tutorial.icon }} fa-fw"></i> <span class="network-name">{{ tutorial.title }}</span></a>
             <br>
-            <h5>{{tutorial.description}}</h5>
             <br>
+            <div class="lead">{{tutorial.description}}
+            <br><br>
             <code class="social-instructions">> {{tutorial.instructions}}</code>
+            </div>
           </li>
           {% endfor %}
         </ul>
@@ -25,8 +27,9 @@
             <!-- <h3>{{ social.purpose }}</h3> -->
             <a href="/build" class="btn btn-default btn-lg"><i class="fa fa-road fa-fw"></i> <span class="network-name">Create a Tutorial</span></a>
             <br>
-            <h5>Learn how to build your own interactive tutorials for CodeRoad</h5>
-            <h5>using Markdown & Unit Tests</h5>
+            <br>
+            <div class="lead">Learn how to build your own interactive tutorials for CodeRoad
+            using Markdown & Unit Tests</div>
           </li>
         </ul>
       </div>

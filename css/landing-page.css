@@ -203,3 +203,11 @@ code {
 #commands {
   margin-top: 40px;
 }
+
+.learn .section-heading{
+  text-align: center;
+}
+.learn div {
+  padding: 20px;
+  text-align: left;
+}
