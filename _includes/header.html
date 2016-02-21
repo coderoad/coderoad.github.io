@@ -15,6 +15,8 @@
               <li>
                 <!-- <h3>{{ social.purpose }}</h3> -->
                 <a href="{{ social.url }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-{{ social.icon }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+                <br><br>
+                <code class="social-instructions">> {{social.instructions}}</code>
               </li>
               {% endfor %}
             </ul>
