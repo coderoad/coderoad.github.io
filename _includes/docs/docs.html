@@ -24,27 +24,7 @@
         </section>
       </div>
 
-      <div class="col-md-3" role="complementary">
-        <div class="bs-docs-sidebar hidden-print affix-top">
-          <ul class="nav bs-docs-sidenav">
-            <li>
-              <a href="#overview">
-                Overview
-              </a>
-            </li>
-            {% for post in site.posts %}
-            <li>
-              <a href="#{{ post.id }}">
-              {{ post.title }}
-            </a>
-            </li>
-            {% endfor %}
-          </ul>
-          <a class="back-to-top" href="#top">
-            <i class="glyphicon glyphicon-chevron-up"></i> Back to top
-          </a>
-        </div>
+  {% include docs/side-nav.html %}
 
-      </div>
     </div>
 </section>
