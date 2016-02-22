@@ -8,3 +8,11 @@
 #docs code {
   padding: 0;
 }
+
+#docs h3 {
+  margin-top: 25px;
+}
+
+#docs ul li {
+  list-style-type: circle;
+}

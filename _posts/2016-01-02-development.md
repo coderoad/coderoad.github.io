@@ -14,9 +14,9 @@ In your development directory, run **create** with your new package name.
 
 Running **create** generates:
 
-1. an example `tutorial.md`, which imports several tutorial files
-2. an example `test` directory with a few example tests
-3. a `package.json` configuration with some of the following settings:
+* an example `tutorial.md`, which imports several tutorial files
+* an example `test` directory with a few example tests
+* a `package.json` configuration with some of the following settings:
 
 
         {
@@ -73,7 +73,9 @@ Inside of your demo root directory, connect the link.
 
 Open *Atom-Coderoad* to view your tutorial. Your package should appear as a loaded package. Click on it.
 
-Reload *Atom* to view changes.
+![CodeRoad Loaded Packages](/img/docs/loaded-packages.png)
+
+Reload *Atom* to view changes. You can use the Atom [command-palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette) to find "reload" or simply use the reload hot-key.
 
 * Windows & Linux: alt-ctrl-r
 * Mac: ctrl-alt-cmd-l

@@ -4,7 +4,7 @@ title: Installation
 id: install
 ---
 
-To build a tutorial with CodeRoad, you'll need to install two parts.
+To build a tutorial with CodeRoad, you'll need to install both **Atom-CodeRoad** & the **CodeRoad-CLI**.
 
 ### Atom CodeRoad
 
