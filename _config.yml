@@ -15,10 +15,12 @@ using the coderoad-cli and tools developers already know: markdown and unit test
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 permalink: pretty
 
 gems:
   - jekyll-sitemap
+  - rouge
 
 # ----------------------- #
 #   3rd Party Settings    #

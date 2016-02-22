@@ -10,15 +10,15 @@
           <h1 id="overview" class="page-header">Overview</h1>
 
           <blockquote>
-            Docs are under development
+            Docs are under construction
           </blockquote>
 
-          {% for post in site.posts %}
+          {% for post in site.posts reversed %}
 
-          <section id="{{ post.id }}">
+          <!-- <section id="{{ post.id }}">
             <h2 class="section-heading">{{ post.title }}</h2>
-            <div>{{ post.content }}</div>
-          </section>
+            <div class="lead">{{ post.content }}</div>
+          </section> -->
 
           {% endfor %}
         </section>
