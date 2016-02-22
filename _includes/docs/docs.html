@@ -1,3 +1,50 @@
+<link rel="stylesheet" type="text/css" href="/css/docs.min.css" />
+
 <section id="docs">
-  <h2>Coming Soon</h2>
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-md-9" role="main">
+        <section class="bs-docs-section">
+          <h1 id="overview" class="page-header">Overview</h1>
+
+          <blockquote>
+            Docs are under development
+          </blockquote>
+
+          {% for post in site.posts %}
+
+          <section id="{{ post.id }}">
+            <h2 class="section-heading">{{ post.title }}</h2>
+            <div>{{ post.content }}</div>
+          </section>
+
+          {% endfor %}
+        </section>
+      </div>
+
+      <div class="col-md-3" role="complementary">
+        <div class="bs-docs-sidebar hidden-print affix-top">
+          <ul class="nav bs-docs-sidenav">
+            <li>
+              <a href="#overview">
+                Overview
+              </a>
+            </li>
+            {% for post in site.posts %}
+            <li>
+              <a href="#{{ post.id }}">
+              {{ post.title }}
+            </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <a class="back-to-top" href="#top">
+            <i class="glyphicon glyphicon-chevron-up"></i> Back to top
+          </a>
+        </div>
+
+      </div>
+    </div>
 </section>

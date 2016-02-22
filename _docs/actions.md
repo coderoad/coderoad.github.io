@@ -1,3 +1,0 @@
-### Editor Actions
-
-coming soon
