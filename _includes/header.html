@@ -11,14 +11,12 @@
             <h3>{{ page.subTitle }}</h3>
             <hr class="intro-divider">
             <ul class="list-inline intro-social-buttons">
-              {% for social in site.social %}
               <li>
                 <!-- <h3>{{ social.purpose }}</h3> -->
-                <a href="{{ social.url }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-{{ social.icon }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+                <a href="https://github.com/coderoad/atom-coderoad" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Atom-CodeRoad</span></a>
                 <br><br>
-                <code class="social-instructions">> {{social.instructions}}</code>
+                <code class="social-instructions">> apm install atom-coderoad</code>
               </li>
-              {% endfor %}
             </ul>
           </div>
 

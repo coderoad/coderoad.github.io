@@ -33,6 +33,18 @@ body, h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #f8f8f8;
     background: linear-gradient(
+      rgba(36, 137, 16, 0.2),
+      rgba(40, 120, 20, 0.2)
+    ), url(../img/coderoad-header.jpg) no-repeat center center;
+    background-size: cover;
+}
+.intro-header-docs {
+    padding-top: 50px;
+    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 0px;
+    text-align: center;
+    color: #f8f8f8;
+    background: linear-gradient(
       rgba(173, 216, 230, 0.2),
       rgba(178, 214, 222, 0.2)
     ), url(../img/coderoad-header.jpg) no-repeat center center;
@@ -199,6 +211,7 @@ code {
   font-size: 0.7em;
   opacity: 0.7;
 }
+
 
 #commands {
   margin-top: 40px;

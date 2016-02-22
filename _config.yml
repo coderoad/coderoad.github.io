@@ -24,12 +24,6 @@ gems:
 #   3rd Party Settings    #
 # ----------------------- #
 
-social:
-  - title: atom plugin
-    icon: github
-    url: https://github.com/coderoad/atom-coderoad
-    instructions: apm install atom-coderoad
-
 tutorials:
   - title: Functional School
     description: A fun look at functional programming concepts in JavaScript
