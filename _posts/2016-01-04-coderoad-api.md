@@ -43,6 +43,8 @@ Defaults for loading tests are specified in the tutorial *package.json* file.
 
 The first example would load the file './tutorial/path/to/file.spec.js' in the project root directory.
 
+See an [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md) using *@test*.
+
 ### `@hint`
 
 *Note: Hints have not been implemented yet in Atom-Coderoad. Coming soon.*
@@ -95,6 +97,6 @@ Add text to the bottom of the active text editor.
       }
     ```))
 
-#### Future API
+#### Future Actions
 
-More editor actions will be added to CodeRoad in the future.
+More editor actions will be added to CodeRoad at a later date.
