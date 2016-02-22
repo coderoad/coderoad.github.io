@@ -10,7 +10,11 @@
 }
 
 #docs h3 {
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+#docs h2 {
+  margin-top: 30px;
 }
 
 #docs ul li {

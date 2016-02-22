@@ -10,21 +10,26 @@
           <h1 id="overview" class="page-header">Overview</h1>
 
           <blockquote>
-            Docs are under construction
+            CodeRoad aims to make building & sharing interactive tutorials as easy as possible.
           </blockquote>
-          <br>
-          {% for post in site.posts reversed %}
+
+          <div class="lead">
+            For a quick overview of how everything comes together&nbsp;&nbsp;&nbsp;
+            <a href="/build" class="btn btn-default btn-lg"><i class="fa fa-road fa-fw"></i> <span class="network-name">Read this</span></a>
+
+          </div>
+
+          <br> {% for post in site.posts reversed %}
 
           <section id="{{ post.id }}">
             <h2 class="section-heading">{{ post.title }}</h2>
             <div class="lead">{{ post.content }}</div>
           </section>
-          <br>
-          {% endfor %}
+          <br> {% endfor %}
         </section>
       </div>
 
-  {% include docs/side-nav.html %}
+      {% include docs/side-nav.html %}
 
     </div>
 </section>
