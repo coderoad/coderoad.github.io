@@ -11,7 +11,7 @@ To get setup quickly with CodeRoad, either clone a tutorial repo or use the CLI.
 
 In your development directory, run **create** with your new package name.
 
-      > coderoad create $YOUR-PACKAGE-NAME$
+    > coderoad create $YOUR-PACKAGE-NAME$
 
 Running **create** generates:
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Test Runner
+title: Test Runners
 id: test-runner
 file: 2016-01-06-testRunner.md
 ---
