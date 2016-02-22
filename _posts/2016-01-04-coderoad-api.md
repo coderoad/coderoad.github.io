@@ -22,8 +22,8 @@ Features can be commented out, allowing you to view different files at a time. B
 
 *@import* loads other markdown files. Specify a relative path from the root project directory. If no file extension is provided, it will default to *.md*.
 
-      @import('./path/to/file')
-      @import('./path/to/file.md')
+    @import('./path/to/file')
+    @import('./path/to/file.md')
 
 See an [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/tutorial.md).
 
@@ -32,15 +32,15 @@ See an [example](https://github.com/coderoad/coderoad-functional-school/blob/mas
 
 Defaults for loading tests are specified in the tutorial *package.json* file.
 
-      "config": {
-        "testDir": "tutorial",     // the directory name tests paths will load from
-        "testSuffix": ".spec.js"   // the test file suffix that will be added
-      }
+    "config": {
+      "testDir": "tutorial",     // the directory name tests paths will load from
+      "testSuffix": ".spec.js"   // the test file suffix that will be added
+    }
 
 *@test* loads a test file. It is important that these files are loaded in the correct order. *@test* can take a single test file, or an array of test files.
 
-      @test('path/to/file')
-      @test(['path/to/file', 'path/to/file2'])
+    @test('path/to/file')
+    @test(['path/to/file', 'path/to/file2'])
 
 The first example would load the file './tutorial/path/to/file.spec.js' in the project root directory.
 
