@@ -2,6 +2,7 @@
 layout: docs
 title: Installation
 id: install
+file: 2016-01-01-installation.md
 ---
 
 To build a tutorial with CodeRoad, you'll need to install both **Atom-CodeRoad** & the **CodeRoad-CLI**.
