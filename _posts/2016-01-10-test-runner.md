@@ -2,7 +2,7 @@
 layout: docs
 title: Test Runners
 id: test-runner
-file: 2016-01-10-testRunner.md
+file: 2016-01-10-test-runner.md
 ---
 A test runner works by creating a child process and calling a test framework with target files.
 
