@@ -20,11 +20,11 @@ We need more test runners. Why not build one?
 
 If you're interested in helping CodeRoad support a programming language of your choice, here's how to set up the test runner.
 
-The test runner should spawn a child process. Think of this like your program opening up a terminal, typing in command line commands, then collecting and returning the the results to *Atom-CodeRoad*. See [an example child process created in *mocha-coderoad*](https://github.com/coderoad/mocha-coderoad/blob/master/src/create-runner.js).
+The test runner should spawn a child process. Think of this like your program opening up a terminal, typing in command line commands, then collecting and returning the the results to *Atom-CodeRoad*. See [an example child process created in *mocha-coderoad*](https://github.com/coderoad/mocha-coderoad/blob/master/src/create-runner.ts).
 
 The test runner is called with four ordered inputs, two of which act as callback functions that return the log & result to *Atom-CodeRoad*.
 
-See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.js).
+See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts).
 
 
     export default function runner(testFile, config, handleResult, handleLog) {
@@ -82,4 +82,4 @@ The result should output the 'taskPosition' after the test. 'change' represents 
 
 A callback function that should be called with a string **log** statement
 
-If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.
+*If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.*
