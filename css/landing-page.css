@@ -224,3 +224,7 @@ code {
   padding: 20px;
   text-align: left;
 }
+
+.docs-sidenav {
+  margin-top: 40px;
+}
