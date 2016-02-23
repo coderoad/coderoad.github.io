@@ -7,43 +7,43 @@ file: 2016-01-07-test-examples.md
 
 Here are examples using *mocha* with *chai*'s *expect*. See the [docs](http://chaijs.com/api/bdd/).
 
-##### exists
+#### exists
 
     it('doesn\'t exist', function() {
       expect(target).to.not.be.undefined;
     });
 
-##### type
+#### type
 
     it('should be a function', function() {
       expect(target).to.be.a('function');
     });
 
-##### function params
+#### function params
 
     it('should have two parameters', function() {
       expect(target).to.have.length(2);
     });
 
-##### function returns
+#### function returns
 
     it('should add one to the number', function () {
       expect(addOne(1)).to.equal(2);
     });
 
-##### equals
+#### equals
 
     it('should be 42', function () {
       expect(target).to.equal(42);
     });
 
-##### deep equals (with objects or arrays)
+#### deep equals (with objects or arrays)
 
     it('should be {a: 42}', function () {
       expect(target).to.deep.equal({a: 42});
     });
 
-##### regex
+#### regex
 
     it('should access the property "prop"', function () {
       var regex1 = /\.prop/;            // dot notation
@@ -53,7 +53,7 @@ Here are examples using *mocha* with *chai*'s *expect*. See the [docs](http://ch
       expect(result).to.be.true;
     });
 
-##### spies
+#### spies
 
 You can use [*sinon*](http://sinonjs.org/docs/) or [*chai-spies*](https://github.com/chaijs/chai-spies) to create a spy. See an example below:
 

@@ -5,7 +5,9 @@ id: install
 file: 2016-01-01-installation.md
 ---
 
-To build a tutorial with CodeRoad, you'll need to install both **Atom-CodeRoad** & the **CodeRoad-CLI**.
+To play a tutorial, you'll only need **Atom-CodeRoad**.
+
+But to build a tutorial, you'll also need the **CodeRoad-CLI**.
 
 ### Atom CodeRoad
 

@@ -7,7 +7,7 @@ file: 2016-01-02-development.md
 
 ### Create
 
-To get setup quickly with CodeRoad, either clone a tutorial repo or use the CLI.
+Get setup quickly with CodeRoad: either [clone a tutorial repo](https://git-scm.com/docs/git-clone) or use the *CodeRoad-CLI*.
 
 In your development directory, run **create** with your new package name.
 
