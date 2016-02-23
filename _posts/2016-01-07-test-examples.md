@@ -9,49 +9,63 @@ Here are examples using *mocha* with *chai*'s *expect*. See the [docs](http://ch
 
 #### exists
 
-    it('doesn\'t exist', function() {
-      expect(target).to.not.be.undefined;
-    });
+```js
+it('doesn\'t exist', function() {
+    expect(target).to.not.be.undefined;
+});
+```
 
 #### type
 
-    it('should be a function', function() {
-      expect(target).to.be.a('function');
-    });
+```js
+it('should be a function', function() {
+    expect(target).to.be.a('function');
+});
+```
 
 #### function params
 
-    it('should have two parameters', function() {
-      expect(target).to.have.length(2);
-    });
+```js
+it('should have two parameters', function() {
+    expect(target).to.have.length(2);
+});
+```
 
 #### function returns
 
-    it('should add one to the number', function () {
-      expect(addOne(1)).to.equal(2);
-    });
+```js
+it('should add one to the number', function () {
+    expect(addOne(1)).to.equal(2);
+});
+```
 
 #### equals
 
-    it('should be 42', function () {
-      expect(target).to.equal(42);
-    });
+```js
+it('should be 42', function () {
+    expect(target).to.equal(42);
+});
+```
 
 #### deep equals (with objects or arrays)
 
-    it('should be {a: 42}', function () {
-      expect(target).to.deep.equal({a: 42});
-    });
+```js
+it('should be {a: 42}', function () {
+    expect(target).to.deep.equal({a: 42});
+});
+```
 
 #### regex
 
-    it('should access the property "prop"', function () {
-      var regex1 = /\.prop/;            // dot notation
-      var regex2 = /\[["']prop["']\]/;  // bracket notation
-      var string = target.toString();
-      var result = !!string.match(regex1) && !!string.match(regex2);
-      expect(result).to.be.true;
-    });
+```js
+it('should access the property "prop"', function () {
+    var regex1 = /\.prop/;            // dot notation
+    var regex2 = /\[["']prop["']\]/;  // bracket notation
+    var string = target.toString();
+    var result = !!string.match(regex1) && !!string.match(regex2);
+    expect(result).to.be.true;
+});
+```
 
 #### spies
 
@@ -59,18 +73,19 @@ You can use [*sinon*](http://sinonjs.org/docs/) or [*chai-spies*](https://github
 
 `> npm i -s chai-spies`
 
-    var chai = require('chai');
-    var spies = require('chai-spies');
-    var expect = chai.expect;
+```js
+var chai = require('chai'),
+    spies = require('chai-spies');
+var expect = chai.expect;
     chai.use(spies);
 
-    var spy = chai.spy.on(console, 'log');
-    loadJS('04-forEach.js');
+var spy = chai.spy.on(console, 'log');
+loadJS('04-forEach.js');
 
-    it('should write "hello world" to the console', function () {
-      expect(spy).to.have.been.called.with('hello world');
-    });
-
+it('should write "hello world" to the console', function () {
+    expect(spy).to.have.been.called.with('hello world');
+});
+```
 
 ### Dynamic Tests
 
@@ -80,19 +95,23 @@ Some variables are passed into the test runner through the node environment *pro
 
 See an example of dynamic data based on the task position below:
 
-    var data = [1, 2, 3];
+```js
+var data = [1, 2, 3];
 
-    if (process.env.TASK_POSITION === '4') {
-      data = [1, 2, 3, 4];
-    }
+if (process.env.TASK_POSITION === '4') {
+    data = [1, 2, 3, 4];
+}
+```
 
 Tests can also change based on the task position.
 
-    if (process.env.TASK_POSITION !== '4') {
-      it('should do this', function () { ... });
-    } else {
-      it('should to that', function () { ... });
-    }
+```js
+if (process.env.TASK_POSITION !== '4') {
+    it('should do this', function () { ... });
+} else {
+    it('should to that', function () { ... });
+}
+```
 
 See a full [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/04/01-forEach.spec.js).
 

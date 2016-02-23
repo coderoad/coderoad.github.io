@@ -126,6 +126,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-sitemap
+  rouge
 
 BUNDLED WITH
    1.11.2

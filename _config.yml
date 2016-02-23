@@ -15,6 +15,9 @@ using the coderoad-cli and tools developers already know: markdown and unit test
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 permalink: pretty
 
 gems:

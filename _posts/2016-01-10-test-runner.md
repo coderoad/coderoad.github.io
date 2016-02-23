@@ -26,13 +26,14 @@ The test runner is called with four ordered inputs, two of which act as callback
 
 See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts).
 
-
-    export default function runner(testFile, config, handleResult, handleLog) {
-      ...
-      handleLog(msg); // returns log
-      ...
-      handleResult(result); // returns test result
-    }
+```js
+export default function runner(testFile, config, handleResult, handleLog) {
+  /* ... */
+  handleLog(msg); // returns log
+  /* ... */
+  handleResult(result); // returns test result
+}
+```
 
 Let's look at these four inputs in more detail.
 
@@ -44,14 +45,14 @@ The absolute path to a file containing all concatenated page tests. Call your te
 
 A JSON object of configurations, see an example below
 
-
-    {
-      "dir": "path/to/user/project",
-      "tutorial": "coderoad-package-name",
-      "tutorialDir": "/path/to/installed/tutorial/",
-      "taskPosition": 0
-    }
-
+```json
+{
+  "dir": "path/to/user/project",
+  "tutorial": "coderoad-package-name",
+  "tutorialDir": "/path/to/installed/tutorial/",
+  "taskPosition": 0
+}
+```
 
 #### 3. handleResult
 
@@ -59,24 +60,28 @@ A callback function that should be called with the **result** object. Results sh
 
 ##### pass
 
-    {
-      "pass": true,
-      "taskPosition": 1,
-      "change": 1,
-      "msg": "Task 1 Complete"
-    }
+```json
+{
+  "pass": true,
+  "taskPosition": 1,
+  "change": 1,
+  "msg": "Task 1 Complete"
+}
+```
 
 The result should output the 'taskPosition' after the test. 'change' represents the difference between the starting 'taskPosition' and the resulting 'taskPosition'.
 
 ##### fail
 
-    {
-      "pass": false,
-      "taskPosition": 0,
-      "change": 0,
-      "msg": "`var secret` should be 42",
-      "timedOut": false
-    }
+```json
+{
+  "pass": false,
+  "taskPosition": 0,
+  "change": 0,
+  "msg": "`var secret` should be 42",
+  "timedOut": false
+}
+```
 
 #### 4. handleLog
 
