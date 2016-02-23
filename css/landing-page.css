@@ -93,6 +93,19 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   letter-spacing: 2px;
 }
+.version {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+}
+.systems {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: grey;
+}
 #about {
   background-color: #f8f8f8;
   width: 100%;
