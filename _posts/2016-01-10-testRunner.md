@@ -14,7 +14,9 @@ In this way, the test runner not only determines how unit tests will be written,
 
 * Javascript: [*mocha-coderoad*](https://github.com/coderoad/mocha-coderoad)
 
-### How to Build a Test Runner
+We need more test runners. Why not build one?
+
+### How to Build a New Test Runner
 
 If you're interested in helping CodeRoad support a programming language of your choice, here's how to set up the test runner.
 
@@ -79,3 +81,5 @@ The result should output the 'taskPosition' after the test. 'change' represents 
 #### 4. handleLog
 
 A callback function that should be called with a string **log** statement
+
+If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.
