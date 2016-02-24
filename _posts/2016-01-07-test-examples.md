@@ -58,11 +58,19 @@ it('should be {a: 42}', function () {
 #### regex
 
 ```js
+it('should include the variable "count"', function () {
+    var regex = new RegExp('count');
+    var string = target.toString();
+    expect(string.match(regex)).to.be.true;
+});
+```
+
+```js
 it('should access the property "prop"', function () {
     var regex1 = /\.prop/;            // dot notation
     var regex2 = /\[["']prop["']\]/;  // bracket notation
     var string = target.toString();
-    var result = !!string.match(regex1) && !!string.match(regex2);
+    var result = !!string.match(regex1) || !!string.match(regex2);
     expect(result).to.be.true;
 });
 ```
