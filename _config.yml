@@ -8,8 +8,8 @@ email: coderoadapp@gmail.com
 author: Shawn McKay
 description: > # "Free interactive coding tutorials inside of the Atom editor. Build your own tutorials
 using the coderoad-cli and tools developers already know: markdown and unit tests.
-atomVersion: 0.4.10
-cliVersion: 0.3.13
+atomVersion: 0.4.11
+cliVersion: 0.3.14
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -34,4 +34,4 @@ tutorials:
     description: A fun look at functional programming concepts in JavaScript
     icon: github
     url: https://github.com/coderoad/coderoad-functional-school
-    instructions: npm i -s coderoad-functional-school
+    instructions: npm i --save coderoad-functional-school
