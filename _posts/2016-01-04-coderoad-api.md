@@ -62,19 +62,20 @@ See an [example](https://github.com/coderoad/coderoad-functional-school/blob/mas
 
 ### `@hint`
 
-*@hint* loads a string which can be used to provide hints for the user. The order of hints is important.
+*@hint* loads a string (or array of strings) which can be used to provide hints for the user. The order of hints is important: first in, first out.
 
 ```markdown
 @hint('A hint for the user')
-```
+@hint(['Hint 1', 'Hint 2'])
 
-*@hint* may use code-blocks with syntax highlighting.
+*@hint* may use code-blocks with syntax highlighting, but they must be wrapped in quotes.
 
 ```markdown
-@hint(`var a = 42;`)
-@hint(```js
+@hint("Use the object `{key: val}`")
+@hint("`var a = 42;`")
+@hint("```js
 var a = 42;
-```)
+```")
 ```
 
 ### `@action`
