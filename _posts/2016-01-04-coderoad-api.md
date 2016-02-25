@@ -62,13 +62,10 @@ See an [example](https://github.com/coderoad/coderoad-functional-school/blob/mas
 
 ### `@hint`
 
-*Note: Hints have not yet been implemented in Atom-Coderoad. Coming soon.*
-
-*@hint* loads a string, or array of strings, which can be used to provide hints for the user.
+*@hint* loads a string which can be used to provide hints for the user. The order of hints is important.
 
 ```markdown
 @hint('A hint for the user')
-@hint(['The first hint', 'The second hint'])
 ```
 
 *@hint* may use code-blocks with syntax highlighting.
