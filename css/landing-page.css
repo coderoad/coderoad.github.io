@@ -241,3 +241,12 @@ code {
 .docs-sidenav {
   margin-top: 40px;
 }
+
+.requirements {
+  font-size: 10px;
+  color: white;
+  opacity: 0.8;
+}
+.requirements a:link {
+  color: white;
+}
