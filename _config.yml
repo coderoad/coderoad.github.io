@@ -31,7 +31,7 @@ gems:
 # ----------------------- #
 
 tutorials:
-  - title: Functional School
+  - title: JavaScript Functional School
     description: A fun look at functional programming concepts in JavaScript
     icon: github
     url: https://github.com/coderoad/coderoad-functional-school
