@@ -4,11 +4,11 @@ title: Test Runners
 id: test-runners
 file: 2016-01-10-test-runner.md
 ---
-A test runner works by creating a child process and calling a test framework with target files.
+A CodeRoad test runner works by creating a child process and calling a test framework with target files, then returning the result as a JSON object.
 
 In this way, the test runner not only determines how unit tests will be written, but it actually determines the programming language used in the tutorial.
 
-> Any programming language could be used with CodeRoad, you need only change the test runner.
+> Any programming language can potentially be used with CodeRoad, you need only change the test runner.
 
 ### Current Test Runners
 
@@ -18,13 +18,13 @@ We need more test runners. Why not build one?
 
 ### How to Build a New Test Runner
 
-If you're interested in helping CodeRoad support a programming language of your choice, here's how to set up the test runner.
+If you're interested in helping CodeRoad support a different programming language or test framework of your choice, here's how to set up the test runner.
 
-The test runner should spawn a child process. Think of this like your program opening up a terminal, typing in command line commands, then collecting and returning the the results to *Atom-CodeRoad*. See [an example child process created in *mocha-coderoad*](https://github.com/coderoad/mocha-coderoad/blob/master/src/create-runner.ts).
+The test runner should spawn a child process. Think of this like your program opening up a terminal, typing in some command line commands to run tests, then collecting and returning the the results to *Atom-CodeRoad*. See [an example child process created inside of Atom for *mocha-coderoad*](https://github.com/coderoad/mocha-coderoad/blob/master/src/create-runner.ts).
 
-The test runner is called with four ordered inputs, two of which act as callback functions that return the log & result to *Atom-CodeRoad*.
+The test runner is called in *Atom-CodeRoad* with four ordered inputs, two of which act as callback functions that return the log or result.
 
-See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts).
+See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts), as well as a code summary below:
 
 ```js
 export default function runner(testFile, config, handleResult, handleLog) {
@@ -35,15 +35,15 @@ export default function runner(testFile, config, handleResult, handleLog) {
 }
 ```
 
-Let's look at these four inputs in more detail.
+Let's look at these four test runner inputs in more detail.
 
 #### 1. testFile
 
-The absolute path to a file containing all concatenated page tests. Call your test framework with this.
+The absolute path to a file containing all concatenated page tests. Call your test framework with this file path.
 
 #### 2. config
 
-A JSON object of configurations, see an example below
+A JSON object of configurations that may be needed for setting up your runner. See an example below:
 
 ```json
 {
@@ -56,7 +56,10 @@ A JSON object of configurations, see an example below
 
 #### 3. handleResult
 
-A callback function that should be called with the **result** object. Results should either pass if all pass, or fail if any test fails.
+A callback function that should be called with the **result** object. Results should pass if all tests pass, or fail if even a single test fails.
+
+The result should output the *taskPosition* after the test. The field *change* represents the difference between the starting 'taskPosition' and the resulting 'taskPosition'.
+
 
 ##### pass
 
@@ -68,8 +71,6 @@ A callback function that should be called with the **result** object. Results sh
   "msg": "Task 1 Complete"
 }
 ```
-
-The result should output the 'taskPosition' after the test. 'change' represents the difference between the starting 'taskPosition' and the resulting 'taskPosition'.
 
 ##### fail
 
@@ -85,6 +86,6 @@ The result should output the 'taskPosition' after the test. 'change' represents 
 
 #### 4. handleLog
 
-A callback function that should be called with a string **log** statement
+A callback function that should return the output **log** statement. 
 
 *If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.*
