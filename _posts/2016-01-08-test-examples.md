@@ -2,7 +2,7 @@
 layout: docs
 title: Test Examples
 id: test-examples
-file: 2016-01-07-test-examples.md
+file: 2016-01-08-test-examples.md
 ---
 
 Here are examples using *mocha* with *chai*'s *expect*. See the [docs](http://chaijs.com/api/bdd/).
@@ -122,9 +122,3 @@ if (process.env.TASK_POSITION !== '4') {
 ```
 
 See a full [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/04/01-forEach.spec.js).
-
-### Test Writing Tool
-
-It's entirely possible to create a simplified testing tool that could make writing tests faster & easier.
-
-The easiest solution would be to use editor snippets to generate a page of tests from a simple configuration object. This does not yet exist.

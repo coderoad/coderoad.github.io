@@ -2,7 +2,7 @@
 layout: docs
 title: Test Runners
 id: test-runners
-file: 2016-01-10-test-runner.md
+file: 2016-01-11-test-runner.md
 ---
 A CodeRoad test runner works by creating a child process and calling a test framework with target files, then returning the result as a JSON object.
 
@@ -86,6 +86,6 @@ The result should output the *taskPosition* after the test. The field *change* r
 
 #### 4. handleLog
 
-A callback function that should return the output **log** statement. 
+A callback function that should return the output **log** statement.
 
 *If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.*
