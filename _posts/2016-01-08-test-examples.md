@@ -5,7 +5,7 @@ id: test-examples
 file: 2016-01-08-test-examples.md
 ---
 
-Here are examples using *mocha* with *chai*'s *expect*. See the [docs](http://chaijs.com/api/bdd/).
+Here are examples using *mocha* with *chai*'s *expect*. See the [Chai/Expect docs](http://chaijs.com/api/bdd/). Also keep in mind that most uses cases are covered by [test snippets](#test-snippets).
 
 #### exists
 

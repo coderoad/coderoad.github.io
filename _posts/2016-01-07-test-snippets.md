@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Test snippets
+title: Test Snippets
 id: test-snippets
 file: 2016-01-07-test-snippets.md
 ---
