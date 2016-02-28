@@ -1,47 +1,64 @@
 <section id="build">
 
-  <section id="commands">
-    <div class="container content-section">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- <hr class="section-heading-spacer"> -->
-          <div class="clearfix"></div>
-          <div class="lead">
-            <div class="row">
-              <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-                <code>> coderoad create</code>
-                <br>
-                <br>
-              </div>
-              <div class="col-xs-6">Quickly setup a base project</div>
-            </div>
-            <div class="row">
-              <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-                <code>> coderoad build</code>
-                <br>
-                <br>
-              </div>
-              <div class="col-xs-6">Parse markdown tutorial into <i>coderoad.json</i></div>
-            </div>
-            <div class="row">
-              <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-                <code>> coderoad publish</code>
-                <br>
-                <br>
-              </div>
-              <div class="col-xs-6">Publish tutorial version on <a href="https://npmjs.org" target="_blank">NPM</a> with <i>coderoad-</i> prefix</div>
+  <div class="content-section-a">
+    <br><br>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="clearfix"></div>
+        <div class="lead">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="intro-social-buttons coderoad-cli">
+                <li>
+                  <a href="https://github.com/coderoad/coderoad-cli" target="_blank" class="btn btn-default btn-lg">
+                    <i class="fa fa-github fa-fw"></i>
+                    <span class="network-name">CodeRoad-CLI
+                      <span class="version">v{{ site.cliVersion }}</span>
+                    </span>
+                  </a>
+                  <br><br>
+                  <code class="social-instructions">> npm i -g coderoad-cli</code>
+                  <br><br>
+                  <a class="version" href="/docs/#install">Install Guide</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div style="text-align:center">
-            <a href="/docs/#install" class="btn btn-default btn-lg"><span class="network-name">Learn More</span></a>
-            <br><br>
+          <br>
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad create</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Quickly setup a base project</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad build</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Parse markdown tutorial into
+              <i>coderoad.json</i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad publish</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Publish tutorial version on
+              <a href="https://npmjs.org" target="_blank">NPM</a>
+              with
+              <i>coderoad-</i>
+              prefix</div>
           </div>
         </div>
-
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- /.container -->
 
@@ -55,25 +72,40 @@
           <div class="clearfix"></div>
           <h2 class="section-heading">Build in Markdown</h2>
           <div class="lead">Tutorials are compiled from markdown.
-
-            <br><br>
-            <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md" target="_blank" class="btn btn-default btn-sm"><span class="network-name">A Tutorial Example</span></a>
             <br>
-            <br>Control the editor with a <a href="/docs/#coderoad-API">simple API</a>:
-            <br>
+            <br>Control the editor with a simple API:
             <br>
             <br>
             <ul>
-              <li><code>@import</code> load another markdown file</li>
+              <li>
+                <code>@import</code>
+                load another markdown file</li>
               <br>
-              <li><code>@test</code> load unit tests</li>
+              <li>
+                <code>@test</code>
+                load unit tests</li>
               <br>
-              <li><code>@action</code> open a file, set/insert text</li>
+              <li>
+                <code>@action</code>
+                open a file, set/insert text</li>
               <br>
-              <li><code>@hint</code> add helpful clues</li>
+              <li>
+                <code>@hint</code>
+                add helpful clues</li>
             </ul>
             <br>
-            <a href="/docs/#tutorial" class="btn btn-default btn-lg"><span class="network-name">Learn More</span></a>
+            <ul class="banner-social-buttons">
+              <li>
+                <a href="/docs/#tutorial" class="btn btn-default btn-sm">
+                  <span class="network-name">Tutorial Docs</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md" target="_blank" class="btn btn-default btn-sm">
+                  <span class="network-name">Example</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col-lg-6 col-sm-pull-6 col-sm-6">
@@ -100,46 +132,64 @@ function isAda() {
 }
 ```
 ))
-        </pre></code>
-        </div>
+        </pre>
+        </code>
       </div>
-
     </div>
-    <!-- /.container -->
 
   </div>
-  <!-- /.content-section-b -->
+  <!-- /.container -->
 
-  <div class="content-section-a">
+</div>
+<!-- /.content-section-b -->
 
-    <div class="container">
+<div class="content-section-a">
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-6">
-          <!-- <hr class="section-heading-spacer"> -->
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Unit Test Feedback</h2>
-          <div class="lead"> Write task feedback using unit tests.
-            <br><br>
-            <a href="/docs/#test-snippets">Snippets</a> & <a href="/docs/#test-examples">examples</a> make test writing easy.
-            <br><br>
-              <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/01-filter.spec.js" target="_blank" class="btn btn-default btn-sm"><span class="network-name">A Unit Test Example</span></a>
-            <br>
-            <br>
-            <br> Currently supported:
-            <br>
-            <ul>
-              <li>Javascript: <a href="https://github.com/coderoad/mocha-coderoad" target="_blank">Mocha</a></li>
-            </ul>
-            <br>
-            <i>CodeRoad will eventually support more test frameworks and programming languages through easy to setup <a href="/docs/#test-runners">test runners</a></i>
-            <br>
-            <br>
-            <a href="/docs/#tests" class="btn btn-default btn-lg"><span class="network-name">Learn More</span></a>
-          </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <!-- <hr class="section-heading-spacer"> -->
+        <div class="clearfix"></div>
+        <h2 class="section-heading">Unit Test Feedback</h2>
+        <div class="lead">
+          Write task feedback using unit tests.
+          <br><br>
+          <a href="/docs/#test-snippets">Snippets</a>
+          &
+          <a href="/docs/#test-examples">examples</a>
+          make test writing easy.
+          <br><br>
+          Currently supported:
+          <br>
+          <ul>
+            <li>Javascript:
+              <a href="https://github.com/coderoad/mocha-coderoad" target="_blank">Mocha</a>
+            </li>
+          </ul>
+          <br>
+          <i>CodeRoad will eventually support more test frameworks and programming languages through easy to setup
+            <a href="/docs/#test-runners">test runners</a>
+          </i>
+          <br>
+          <br>
+          <ul class="banner-social-buttons">
+            <li>
+              <a href="/docs/#tests" class="btn btn-default btn-lg">
+                <span class="network-name">Test Docs</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/01-filter.spec.js" target="_blank" class="btn btn-default btn-lg">
+                <span class="network-name">Example</span>
+              </a>
+            </li>
+          </ul>
+
         </div>
-        <div class="col-lg-6 col-lg-offset-2 col-sm-6">
-          <pre><code class="language-js">
+      </div>
+      <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+        <pre><code class="language-js">
 describe('01 function isAda', function () {
 
 it('doesn\'t exist', function () {

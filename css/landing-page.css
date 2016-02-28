@@ -13,6 +13,9 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+a:hover {
+  text-decoration: none;
+}
 .lead {
   font-size: 18px;
   font-weight: 400;
@@ -38,7 +41,7 @@ body, h1, h2, h3, h4, h5, h6 {
     ), url(../img/coderoad-header.jpg) no-repeat center center;
     background-size: cover;
 }
-.intro-header-docs {
+.short-intro-header {
     padding-top: 20px;
     /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 0px;
@@ -49,13 +52,25 @@ body, h1, h2, h3, h4, h5, h6 {
       rgba(178, 214, 222, 0.2)
     ), url(../img/coderoad-header.jpg) no-repeat center center;
     background-size: cover;
+    height: 300px;
 }
+
 .intro-message {
   position: relative;
   padding-top: 20%;
   padding-bottom: 20%;
 }
 .intro-message > h1 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
+}
+.short-intro-message {
+  position: relative;
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+.short-intro-message > h1 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   font-size: 5em;
@@ -249,4 +264,7 @@ code {
 }
 .requirements a:link {
   color: white;
+}
+.coderoad-cli {
+  text-align: center;
 }
