@@ -8,4 +8,6 @@ Test Runners may have pre-made [Atom snippets](https://atom.io/docs/latest/using
 
 Open up *Atom* -> *Open Your Snippets*. Add the contents of `snippets.cson` to your global `snippets.cson` file. Read the project README to see which snippets are available and which prefixes you should use.
 
-For example, typing 'mochacr-f' will generate an entire set of tests for a "mocha-coderoad" function.
+For example, typing 'mochacr-f' will generate an entire set of tests for a "mocha-coderoad" function. See an example below:
+
+![Mocha Coderoad Test Snippets](/img/gif/snippets.gif)
