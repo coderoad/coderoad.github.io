@@ -17,20 +17,13 @@ Use [Atom CodeRoad](https://github.com/coderoad/atom-coderoad) to view and play 
 
 * Install the *Atom-CodeRoad* package, or use the [apm](https://github.com/atom/apm) command-line tool
 
-      `> apm install atom-coderoad`
+`> apm install atom-coderoad`
+
+You may also want to install [terminal-plus](https://atom.io/packages/terminal-plus).
 
 * Toggle open *Atom-CodeRoad* in *Atom* using the "packages" menu or press *ctrl-alt-0*.
 
-* It's recommended you also enable Autosave in Atom.
 
-To enable autosave in Atom, go to *Atom* > *Preferences* > *Packages* > search for *"autosave"* > *settings* > check *"enabled"*.
-
-* If CodeRoad is unavailable under *Atom* > *Packages* > *CodeRoad*, restart or reload atom.
-
-You can use the Atom [command-palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette) to find "reload" or simply use the reload hot-key.
-
-* Windows & Linux: alt-ctrl-r
-* Mac: ctrl-alt-cmd-l
 
 ### Tutorial
 
@@ -45,6 +38,15 @@ Now you can install a tutorial. Run `npm install --save-dev $THE-PACKAGE-NAME$` 
 
 Use [CodeRoad CLI](https://github.com/coderoad/coderoad-cli) to setup and build a project data file.
 
-* Install *CodeRoad-CLI*. Make sure [NodeJS](nodejs.org) is already installed
+Install *CodeRoad-CLI*. Make sure [NodeJS](nodejs.org) is already installed
 
-      `> npm install -g coderoad-cli`
+`> npm install -g coderoad-cli`
+
+
+### Atom Autosave
+
+It's recommended you also enable *autosave* in Atom.
+
+![Enable autosave in Atom](/img/gif/autosave.gif)
+
+Tutorials run unit tests on save, *autosave* can speed up the process.
