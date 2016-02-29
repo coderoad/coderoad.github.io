@@ -68,9 +68,13 @@ The result should output the *taskPosition* after the test. The field *change* r
   "pass": true,
   "taskPosition": 1,
   "change": 1,
-  "msg": "Task 1 Complete"
+  "msg": "Task 1 Complete",
+  "completed": false
 }
 ```
+
+`completed` indicates all tests have passed. `pass` indicates at least one test has passed.
+
 
 ##### fail
 
