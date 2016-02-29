@@ -47,7 +47,7 @@ Defaults for loading tests are specified in the tutorial *package.json* file.
 }
 ```
 
-`testDir` is appended to all @test calls, and `testSuffix` is added to the end.
+`testDir` is appended to all *@test* calls, and `testSuffix` is added to the end.
 
 *@test* loads a test file. It is important that these files are loaded in the correct order. *@test* can take a single test file, or an array of test files.
 
@@ -56,7 +56,7 @@ Defaults for loading tests are specified in the tutorial *package.json* file.
 @test(['path/to/file', 'path/to/file2'])
 ```
 
-The first example would load the file './tutorial/path/to/file.spec.js' in the project root directory.
+The first example would load the file *./tutorial/path/to/file.spec.js* in the project root directory.
 
 See an [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/1/01/filter.md) using *@test*.
 

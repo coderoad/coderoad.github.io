@@ -80,7 +80,4 @@ Inside of your demo root directory, connect the link.
 
 Open *Atom-Coderoad* to view your tutorial. Your package should appear as a loaded package. Click on it.
 
-Reload *Atom* to view changes. You can use the Atom [command-palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette) to find "reload" or simply use the reload hot-key.
-
-* Windows & Linux: alt-ctrl-r
-* Mac: ctrl-alt-cmd-l
+Reload *Atom* to view changes. You can use the Atom [command-palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette) to find "reload" or simply use the reload hot-key (*Windows & Linux*: alt-ctrl-r, *Mac*: ctrl-alt-cmd-l).
