@@ -1,74 +1,13 @@
 <section id="build">
 
-  <div class="content-section-a">
-    <br><br>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="clearfix"></div>
-        <div class="lead">
-          <div class="row">
-            <div class="col-xs-12">
-              <ul class="intro-social-buttons coderoad-cli">
-                <li>
-                  <a href="https://github.com/coderoad/coderoad-cli" target="_blank" class="btn btn-default btn-lg">
-                    <i class="fa fa-github fa-fw"></i>
-                    <span class="network-name">CodeRoad-CLI
-                      <span class="version">v{{ site.cliVersion }}</span>
-                    </span>
-                  </a>
-                  <br><br>
-                  <code class="social-instructions">> npm i -g coderoad-cli</code>
-                  <br><br>
-                  <a class="version" href="/docs/#install">Install Guide</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-              <code>> coderoad create</code>
-              <br>
-              <br>
-            </div>
-            <div class="col-xs-6">Quickly setup a base project</div>
-          </div>
-          <div class="row">
-            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-              <code>> coderoad build</code>
-              <br>
-              <br>
-            </div>
-            <div class="col-xs-6">Parse markdown tutorial into
-              <i>coderoad.json</i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
-              <code>> coderoad publish</code>
-              <br>
-              <br>
-            </div>
-            <div class="col-xs-6">Publish tutorial version on
-              <a href="https://npmjs.org" target="_blank">NPM</a>
-              with
-              <i>coderoad-</i>
-              prefix</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- /.container -->
 
-  <div class="content-section-b">
+  <div class="content-section-a">
 
     <div class="container">
 
       <div class="row">
         <div class="col-lg-4 col-lg-offset-2 col-sm-push-6 col-sm-6">
-          <!-- <hr class="section-heading-spacer"> -->
           <div class="clearfix"></div>
           <h2 class="section-heading">Build in Markdown</h2>
           <div class="lead">Tutorials are compiled from markdown.
@@ -117,9 +56,9 @@ A trip through functional programming in Javascript.
 Using common built-in Javascript array methods.
 
 ### Filter
-Array -> Array of items that match a condition
+Explanation of how `filter` works.
 
-+ Write a filter condition function called `isAda`
++ Write a filter condition function called `isAda`.
 
 @test('1/01/01-filter')
 @action(open('01-filter.js'))
@@ -132,6 +71,7 @@ function isAda() {
 }
 ```
 ))
+@hint('Use a parameter, let's call it `student`')
 
         </code>
           </pre>
@@ -144,13 +84,12 @@ function isAda() {
   </div>
   <!-- /.content-section-b -->
 
-  <div class="content-section-a">
+  <div class="content-section-b">
 
     <div class="container">
 
       <div class="row">
         <div class="col-lg-4 col-sm-6">
-          <!-- <hr class="section-heading-spacer"> -->
           <div class="clearfix"></div>
           <h2 class="section-heading">Unit Test Feedback</h2>
           <div class="lead">
@@ -171,7 +110,7 @@ function isAda() {
             <br>
             <i>CodeRoad will eventually support more test frameworks and programming languages with
               <a href="/docs/#test-runners">test runner</a>
-              pacakges.
+              packages.
             </i>
             <br>
             <br>
@@ -223,5 +162,76 @@ it('should use the full name "Ada Lovelace"', function () {
   </div>
   <!-- /.content-section-a -->
 
+  <div class="content-section-a">
+    <br><br>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="clearfix"></div>
+        <div class="lead">
+          <!-- <div class="row">
+            <div class="col-xs-12">
+              <ul class="intro-social-buttons coderoad-cli">
+                <li>
+                  <a href="https://github.com/coderoad/coderoad-cli" target="_blank" class="btn btn-default btn-lg">
+                    <i class="fa fa-github fa-fw"></i>
+                    <span class="network-name">CodeRoad-CLI
+                      <span class="version">v{{ site.cliVersion }}</span>
+                    </span>
+                  </a>
+                  <br><br>
+                  <code class="social-instructions">> npm i -g coderoad-cli</code>
+                  <br><br>
+                  <a class="version" href="/docs/#install">Install Guide</a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <br>
+        <div class="row">
+          <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+            <code>> npm install -g coderoad-cli</code>
+          </div>
+          <div class="col-xs-6"><a href="https://github.com/coderoad/coderoad-cli" target="_blank" class="btn btn-default btn-lg">
+            <i class="fa fa-github fa-fw"></i>
+            <span class="network-name">CodeRoad-CLI
+              <span class="version">v{{ site.cliVersion }}</span>
+            </span>
+          </a>
+          <br><br>
+        </div>
+        </div>
+
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad create</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Quickly setup a base project</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad build</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Parse markdown tutorial into
+              <i>coderoad.json</i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-md-4 col-md-offset-2">
+              <code>> coderoad publish</code>
+              <br>
+              <br>
+            </div>
+            <div class="col-xs-6">Publish your tutorial on
+              <a href="https://npmjs.org" target="_blank">NPM</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- content-section-a -->
+
 </section>
-<!-- /.content-section-b -->
