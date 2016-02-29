@@ -6,4 +6,4 @@ file: 2016-01-13-contributing.md
 ---
 See our [development boards](https://coderoad.herokuapp.com/).
 
-More information coming soon.
+See also the [contributing guidelines](https://github.com/coderoad/atom-coderoad/blob/master/CONTRIBUTING.md)

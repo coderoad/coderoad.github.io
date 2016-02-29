@@ -40,7 +40,7 @@ Now you can install a tutorial. Run `npm install --save-dev $THE-PACKAGE-NAME$` 
 
 ### CodeRoad-CLI
 
-Use [CodeRoad CLI](https://github.com/coderoad/coderoad-cli) to setup and build a project data file.
+[CodeRoad CLI](https://github.com/coderoad/coderoad-cli) is necessary for building a tutorial.
 
 Install *CodeRoad-CLI*. Make sure [NodeJS](nodejs.org) is already installed
 
