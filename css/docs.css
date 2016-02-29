@@ -7,21 +7,17 @@
 @viewport {
   width: device-width
 }
-
 body {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
 .navbar {
   margin-bottom: 0;
 }
-
 #content:focus {
   outline: 0
 }
-
 .bs-docs-sidebar.affix {
   position: static
 }
@@ -125,7 +121,6 @@ body {
 .bs-docs-section:last-child {
   margin-bottom: 0
 }
-
 #docs code {
   padding: 0;
 }
@@ -137,4 +132,8 @@ body {
 }
 #docs ul li {
   list-style-type: circle;
+}
+.gif {
+  display: block;
+  margin: 20px auto;
 }
