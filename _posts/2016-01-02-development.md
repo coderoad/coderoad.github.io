@@ -15,9 +15,9 @@ In your development directory, run **create** with your new package name.
 
 Running **create** generates:
 
-* an example `tutorial.md`, which imports several tutorial files
-* an example `test` directory with a few example tests
-* a `package.json` configuration with some of the following settings:
+* an example **tutorial.md**, which imports several tutorial files
+* an example **test** directory with a few example tests
+* a **package.json** configuration with some of the following settings:
 
 ```json
 {
@@ -60,7 +60,7 @@ Add your package name to the `dependencies` in `package.json`:
 }
 ```
 
-Normally you would use `npm install` to install the package, but your package isn't ready to be published yet. Instead, you need to link your tutorial package to your demo directory.
+Normally you would use `> npm install` to install the package, but your package isn't ready to be published yet. Instead, you need to link your tutorial package to your demo directory.
 
 ### Link Your Demo & Tutorial
 

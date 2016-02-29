@@ -33,9 +33,9 @@ To install a tutorial, setup a *package.json* file and save the tutorial as a de
 
 ![Install a Tutorial](/img/gif/install-tutorial.png){: .gif}
 
-You can setup a project quickly by typing `npm init --y` into the command line in your project's folder. This agrees to all of the defaults for your newly created *package.json* file.
+You can setup a project quickly by typing `> npm init --y` into the command line in your project's folder. This agrees to all of the defaults for your newly created *package.json* file.
 
-Now you can install a tutorial. Run `npm install --save-dev $THE-PACKAGE-NAME$` to save the tutorial as a package development dependency. If you run *Atom-CodeRoad* you should see the tutorial appear on the first screen.
+Now you can install a tutorial. Run `> npm install --save-dev $THE-PACKAGE-NAME$` to save the tutorial as a package development dependency. If you run *Atom-CodeRoad* you should see the tutorial appear on the first screen.
 
 
 ### CodeRoad-CLI
