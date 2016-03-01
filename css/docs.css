@@ -7,9 +7,6 @@
 @viewport {
   width: device-width
 }
-#docs {
-  position: relative;
-}
 .navbar {
   margin-bottom: 0;
 }
@@ -81,6 +78,16 @@
 .bs-docs-theme-toggle {
   margin-top: 0
 }
+@media (max-width: 767px) {
+  .bs-docs-sidebar {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .bs-docs-sidebar .nav>li>a {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
 @media (min-width:768px) {
   .back-to-top, .bs-docs-theme-toggle {
     display: block
@@ -116,6 +123,9 @@
 .bs-docs-section:last-child {
   margin-bottom: 0
 }
+#docs {
+  position: relative;
+}
 #docs code {
   padding: 0;
 }
@@ -131,4 +141,6 @@
 .gif {
   display: block;
   margin: 20px auto;
+  max-width: 500px;
+  overflow: hidden;
 }
