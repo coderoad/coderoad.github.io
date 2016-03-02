@@ -118,6 +118,23 @@ Add text to the bottom of the active text editor.
 ```))
 ```
 
-#### What's Next
+### `@onPageComplete`
 
-More editor actions will be added to CodeRoad at a later date. These may include changing the cursor position, replacing content, decorating keywords, etc.
+An optional message that will appear when all of the tasks for a page are completed.
+
+```markdown
+## Page 1
+Page 1 description
+
+@onPageComplete('Next we'll look at page 2')
+```
+
+### What's Next
+
+Further editor actions will be added to CodeRoad. These may include:
+
+* changing the cursor position
+* replacing content
+* decorating keywords
+
+Feel free to suggest a feature.

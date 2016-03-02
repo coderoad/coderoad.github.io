@@ -1,42 +1,39 @@
-<section id="docs">
-  <div class="container bs-docs-container">
-    <div class="row">
+<section id="docs" class="container">
+  <div class="row">
 
-      {% include docs/side-nav.html %}
+    {% include docs/side-nav.html %}
 
-      <div class="col-md-9 col-xs-12" role="main">
-        <section class="bs-docs-section">
-          <h1 id="overview" class="page-header">Overview</h1>
+    <div class="col-md-9 col-xs-12" role="main">
+      <section class="bs-docs-section">
+        <h1 id="overview" class="page-header">Overview</h1>
 
-          <blockquote>
-            CodeRoad aims to make building & sharing interactive coding tutorials as easy as possible.
-          </blockquote>
+        <blockquote>
+          CodeRoad aims to make building & sharing interactive coding tutorials as easy as possible.
+        </blockquote>
 
-          <div class="lead">We hope to create fun and maintainable code tutorials that actually improve with time. We hope to see programming students become teachers, teachers become empowered, and coders become better, faster. But first, let's get some
-            interactive coding tutorials built. That's where you come in.</div>
+        <div class="lead">We hope to create fun and maintainable code tutorials that actually improve with time. We hope to see programming students become teachers, teachers become empowered, and coders become better, faster. But first, let's get some interactive coding
+          tutorials built. That's where you come in.</div>
 
-          <a href="/build" class="btn btn-default btn-lg">
-            <i class="fa fa-road fa-fw"></i>
-            <span class="network-name">Read an Overview of Building a Tutorial</span>
-          </a>
+        <a href="/build" class="btn btn-default btn-lg">
+          <i class="fa fa-road fa-fw"></i>
+          <span class="network-name">Read an Overview of Building a Tutorial</span>
+        </a>
 
-        </section>
+      </section>
 
-        {% for post in site.posts reversed %}
-          <section id="{{ post.id }}" class="bs-docs-section">
-            <h2 class="section-heading">{{ post.title }}</h2>
-            <div class="lead">{{ post.content }}</div>
-            <br>
-            <a href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/{{post.file}}" class="btn btn-default btn-xs">
-              <i class="fa fa-pencil fa-fw"></i>
-              <span class="network-name">
+      {% for post in site.posts reversed %}
+      <section id="{{ post.id }}" class="bs-docs-section">
+        <h2 class="section-heading">{{ post.title }}</h2>
+        <div class="lead">{{ post.content }}</div>
+        <br>
+        <a href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/{{post.file}}" class="btn btn-default btn-xs">
+          <i class="fa fa-pencil fa-fw"></i>
+          <span class="network-name">
                 Edit {{post.title}} Docs</span>
-            </a>
-          </section>
-          <br>
-        {% endfor %}
-      </div>
-
+        </a>
+      </section>
+      <br> {% endfor %}
     </div>
+
   </div>
 </section>
