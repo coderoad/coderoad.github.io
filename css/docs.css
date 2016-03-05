@@ -140,7 +140,7 @@
 }
 .gif {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
   width: 80%;
   overflow: hidden;
 }
