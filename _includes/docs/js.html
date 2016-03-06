@@ -87,11 +87,8 @@
 $(function(){
   $('.gif').hover(function(){
     // on mouse enter
-    console.log($(this));
     var path = $(this).attr('src');
-    console.log('path', path);
     var gif = path.substring(0, path.lastIndexOf('.')) + '.gif';
-    console.log('gif', gif);
     $(this).attr('src', gif);
   }, function(){
     // on mouse leave
