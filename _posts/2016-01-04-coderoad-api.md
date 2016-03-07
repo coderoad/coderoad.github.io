@@ -118,6 +118,21 @@ Add text to the bottom of the active text editor.
 ```))
 ```
 
+#### ::>
+
+Set the cursor position.
+
+```markdown
+@action(insert(```
+  function example() {
+    ::>
+  }
+```
+))
+```
+
+The cursor position will be set to the last use of `::>`.
+
 ### `@onPageComplete`
 
 An optional message that will appear when all of the tasks for a page are completed.
