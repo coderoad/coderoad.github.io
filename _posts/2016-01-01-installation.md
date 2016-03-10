@@ -23,6 +23,8 @@ For an example of how to do this, *hover* over the image below:
 
 You may also want to install [terminal-plus](https://atom.io/packages/terminal-plus) used in the example above.
 
+> If installation fails with a `node-gyp` warning, learn [*how to setup node-gyp*](https://github.com/nodejs/node-gyp) based on your OS.
+
 Toggle open *Atom-CodeRoad* using the *Packages* menu or press *ctrl-alt-0*.
 
 
