@@ -8,8 +8,8 @@ email: coderoadapp@gmail.com
 author: Shawn McKay
 description: > # "Free interactive coding tutorials inside of the Atom editor. Build your own tutorials
 using the coderoad-cli and tools developers already know: markdown and unit tests.
-atomVersion: 0.5.3
-cliVersion: 0.3.24
+atomVersion: 0.5.4
+cliVersion: 0.3.26
 video: DbLpdgrYVOU
 
 # ----------------------- #
