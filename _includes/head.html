@@ -5,8 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ site.description }}" />
   <meta name="author" content="{{ site.author }}" />
+  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="VJIgsbPgP-hRknYcXCVkjVBR0QZg6MaS-kpa9Gp0XY8" />
   <meta name="msvalidate.01" content="1094FA9F7A148483624E60DBEE3DDC89" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image" content="{{ site.image }}" />
+  <meta name="twitter:creator" content="@sh_mck" />
+  <meta name="twitter:site" content="@coderoadapp" />
+
+  <meta property="og:url" content="https://coderoad.github.io" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:image" content="{{ site.image }}" />
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 

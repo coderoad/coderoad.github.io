@@ -2,12 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://coderoad.github.io
+url: https://coderoad.github.io
 title: CodeRoad
 email: coderoadapp@gmail.com
 author: Shawn McKay
 description: > # "Free interactive coding tutorials inside of the Atom editor. Build your own tutorials
 using the coderoad-cli and tools developers already know: markdown and unit tests.
+image: https://coderoad.github.io/img/coderoad-header.jpg
 atomVersion: 0.5.4
 cliVersion: 0.3.26
 video: DbLpdgrYVOU
