@@ -22,20 +22,27 @@ If you're interested in helping CodeRoad support a different programming languag
 
 The test runner should spawn a child process. Think of this like your program opening up a terminal, typing in some command line commands to run tests, then collecting and returning the the results to *Atom-CodeRoad*. See [an example child process created inside of Atom for *mocha-coderoad*](https://github.com/coderoad/mocha-coderoad/blob/master/src/create-runner.ts).
 
-The test runner is called in *Atom-CodeRoad* with four ordered inputs, two of which act as callback functions that return the log or result.
+The test runner is called in *Atom-CodeRoad* with three ordered inputs, the final acting as a callback function that returns the result.
 
 See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts), as well as a code summary below:
 
 ```js
-export default function runner(testFile, config, handleResult, handleLog) {
-  /* ... */
-  handleLog(msg); // returns log
+export default function runner(testFile, config, handleResult) {
   /* ... */
   handleResult(result); // returns test result
 }
 ```
 
-Let's look at these four test runner inputs in more detail.
+Also notice that the runner in the above example handles any `console.log` statements. A special character string is added before the result, any data without that match is passed to the log.
+
+```js
+if (!match) {
+  console.log(data);
+  return;
+}
+```
+
+Let's look at these three test runner inputs in more detail.
 
 #### 1. testFile
 
@@ -88,8 +95,5 @@ The result should output the *taskPosition* after the test. The field *change* r
 }
 ```
 
-#### 4. handleLog
-
-A callback function that should return the output **log** statement.
 
 *If you need help setting up a new test runner, please send an email to coderoadapp@gmail.com.*
