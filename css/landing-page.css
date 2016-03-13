@@ -117,6 +117,13 @@ a:hover {
   letter-spacing: 2px;
   color: black;
 }
+.system {
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+}
 .systems {
   font-size: 10px;
   font-weight: 700;
