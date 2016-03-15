@@ -12,11 +12,22 @@ atomVersion: 0.5.4
 cliVersion: 0.3.26
 video: DbLpdgrYVOU
 
-jekyll-press:
-  exclude: 'sitemap.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-  js_options: {}      # js minifier options
-  css_options: {}     # css minifier options
-  html_options: {}
+# Blog
+blogurl: '/blog'
+paginate: 5
+name: Shawn McKay
+bio: >
+  About me
+
+author_image: 'https://avatars0.githubusercontent.com/u/4660659?v=3&s=460'
+twitter_username: sh_mck
+github_username: shmck
+
+# jekyll-press:
+#  exclude: 'sitemap.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+#  js_options: {}      # js minifier options
+#  css_options: {}     # css minifier options
+#  html_options: {}
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -27,7 +38,11 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  parse_block_html: true
 permalink: pretty
+
+gems:
+  - jekyll-paginate
 
 # ----------------------- #
 #   3rd Party Settings    #
