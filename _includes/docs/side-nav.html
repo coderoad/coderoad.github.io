@@ -7,7 +7,7 @@
           </a>
         </li>
 
-        {% for post in site.posts reversed %}
+        {% for post in site.categories.docs reversed %}
         <li>
           <a class="page-scroll" href="#{{ post.id }}">{{ post.title }}</a>
         </li>

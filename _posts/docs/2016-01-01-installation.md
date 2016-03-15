@@ -3,6 +3,8 @@ layout: docs
 title: Quick Start
 id: install
 file: 2016-01-01-installation.md
+categories:
+- docs
 ---
 
 To play a **tutorial**, you'll only need **Atom-CodeRoad**.

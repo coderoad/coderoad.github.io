@@ -3,18 +3,29 @@
 # ----------------------- #
 
 url: https://coderoad.github.io
+permalink: /:categoryies/:title
 title: CodeRoad
 email: coderoadapp@gmail.com
 author: Shawn McKay
 description: > # "Free interactive coding tutorials inside of the Atom editor. Build your own tutorials using the coderoad-cli and tools developers already know: markdown and unit tests.
+
+# info
 image: https://coderoad.github.io/img/coderoad-header.jpg
 atomVersion: 0.5.4
 cliVersion: 0.3.26
 video: DbLpdgrYVOU
 
+# tutorials
+tutorials:
+  - title: JavaScript Functional School
+    description: A fun look at functional programming concepts in JavaScript
+    icon: github
+    url: https://github.com/coderoad/coderoad-functional-school
+    instructions: npm i --save coderoad-functional-school
+
+
 # Blog
 blogurl: '/blog'
-paginate: 5
 name: Shawn McKay
 bio: >
   About me
@@ -39,18 +50,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   parse_block_html: true
-permalink: pretty
-
-gems:
-  - jekyll-paginate
 
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
-
-tutorials:
-  - title: JavaScript Functional School
-    description: A fun look at functional programming concepts in JavaScript
-    icon: github
-    url: https://github.com/coderoad/coderoad-functional-school
-    instructions: npm i --save coderoad-functional-school

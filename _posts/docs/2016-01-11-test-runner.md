@@ -3,6 +3,8 @@ layout: docs
 title: Test Runners
 id: test-runners
 file: 2016-01-11-test-runner.md
+categories:
+- docs
 ---
 A CodeRoad test runner works by creating a child process and calling a test framework with target files, then returning the result as a JSON object.
 

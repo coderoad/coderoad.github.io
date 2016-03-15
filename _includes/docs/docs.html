@@ -21,12 +21,12 @@
 
       </section>
 
-      {% for post in site.posts reversed %}
+      {% for post in site.categories.docs reversed %}
       <section id="{{ post.id }}" class="bs-docs-section">
         <h2 class="section-heading">{{ post.title }}</h2>
         <div class="lead">{{ post.content }}</div>
         <br>
-        <a href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/{{post.file}}" class="btn btn-default btn-xs">
+        <a href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/docs/{{post.file}}" class="btn btn-default btn-xs">
           <i class="fa fa-pencil fa-fw"></i>
           <span class="network-name">
                 Edit {{post.title}} Docs</span>

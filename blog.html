@@ -4,13 +4,16 @@ layout: blog
 
 <main class="content" role="main">
 
+
   <header class="blog-header">
-      <h1 class="blog-title">{{ site.title }}</h1>
+      <h1 class="blog-title"><a href="{{ site.baseurl }}/" class="logo"><span class="logo">
+        <amp-img src="/img/icon.jpg" width="48" height="48" />
+      </span></a> CodeRoad Blog</h1>
       <h2 class="blog-description">{{ site.description }}</h2>
   </header>
 
   <div class="cf frame">
-    {% for post in paginator.posts %}
+    {% for post in site.categories.blog limit:10 %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
         <div class="article-item">
           <header class="post-header">
@@ -26,20 +29,6 @@ layout: blog
       </article>
     {% endfor %}
   </div>
-
-  <nav class="pagination" role="navigation">
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="older-posts" href="/">Newer posts &rarr;</a>
-      {% else %}
-        <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-      {% endif %}
-    {% endif %}
-  </nav>
 
 </main>
 
