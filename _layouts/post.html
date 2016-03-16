@@ -40,18 +40,42 @@ layout: blog
               {% endif %}
             </span>
           </p>
-          <hr>
+          <br />
           <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
         </section>
       </div>
       {{/post}}
       <div class="isRight">
-        <h5 class="index-headline featured"><span>Supported by</span></h5>
+        <h5 class="index-headline featured"><span>Contact</span></h5>
         <footer class="site-footer">
-          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
-          <a class="subscribe" href="{{ "blog/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
-          <div class="inner">
-            <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
+          <section class="poweredby">
+
+            <div id="mc_embed_signup">
+              <form class="form-inline"
+                action="//herokuapp.us11.list-manage.com/subscribe/post?u=324732fa284e63ca555b47978&amp;id=5f3f4f5086"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_blank"
+                novalidate>
+                <label class="sr-only" style="text-align:center">Subscribe to our mailing list</label>
+                <div class="form-group">
+                  <input type="email" value="" class="form-control" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" style="font-family: Lato,Helvetica,Arial,sans-serif" required/>
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+                    <i class="fa fa-envelope-o fa-fw"></i>
+                    <span class="network-name">
+                      Subscribe To Mail List</span>
+                  </button>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_324732fa284e63ca555b47978_5f3f4f5086" tabindex="-1" value=""/>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <br />
+            <p class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</p>
           </div>
         </footer>
       </div>

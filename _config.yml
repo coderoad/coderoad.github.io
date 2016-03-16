@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: https://coderoad.github.io
-permalink: /:categoryies/:title
+permalink: /articles/:title
 title: CodeRoad
 email: coderoadapp@gmail.com
 author: Shawn McKay
@@ -28,7 +28,7 @@ tutorials:
 blogurl: '/blog'
 name: Shawn McKay
 bio: >
-  About me
+  Coder, educator, lifelong learner.
 
 author_image: 'https://avatars0.githubusercontent.com/u/4660659?v=3&s=460'
 twitter_username: sh_mck
