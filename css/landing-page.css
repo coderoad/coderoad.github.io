@@ -132,7 +132,6 @@ a:hover {
 }
 #about {
   background-color: #f8f8f8;
-  width: 100%;
 }
 .content-section-a {
   padding: 70px 0;
@@ -216,7 +215,6 @@ code {
 }
 #mc_embed_signup {
   font: 14px Lato, Helvetica, Arial, sans-serif;
-  /*width: 100%;*/
 }
 .subscribe-label {
   font-size: 18px;
