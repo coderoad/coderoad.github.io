@@ -8,6 +8,17 @@ The rising popularity of Github's free cross-platform editor stems from it's 'ha
 
 What if you could use modern javascript tools & frameworks to create plugins and customize Atom? Well, if you can make a website, you can.
 
+There is a lot of untapped potential in the area of plugin development. A lot of this is due to the learning curve involved in creating a plugin.
+
+Let's look at some interesting UI dependent plugins in Atom:
+
+* [Regex Railroad Diagram](https://atom.io/packages/regex-railroad-diagram) - regex visualizer
+* [Color Picker](https://atom.io/packages/color-picker) - select Hex colors
+* [Git Time Machine](https://atom.io/packages/git-time-machine) - visualize your Git history
+* [Floobits](https://atom.io/packages/floobits) - video chat in Atom
+* [IMDone](https://atom.io/packages/imdone-atom) - Trello style TODO lists
+
+What kind of renaissance might happen when simple & modern UI comes to Atom? Here's to the future.
 
 ## Fixing Some Atom Misconceptions
 
@@ -41,7 +52,54 @@ The framework of choice for Atom continues to be an [older version of Space-Pen]
 Atom provides fairly comprehensive resources including a [Flight Manual](https://atom.io/docs/v1.5.4/), [Documentation](https://atom.io/docs/api/v1.5.4/AtomEnvironment), [Discussion Board](https://discuss.atom.io/) and thousands of package examples available on Github.
 
 ##### The bad news:
-Atom examples are based on Only a small fraction of these packages utilize more modern web tools or frameworks.
+None of these examples, and only a small fraction of these packages utilize more modern web tools or frameworks.
+
+
+
+## Separating concerns
+
+View, & Atom
+
+```js
+// view
+import {initRoot, render} from '../components/render';
+// setup & teardown
+import {onActivate, onDeactivate} from './subscriptions';
+
+class Main {
+  constructor() {
+    this.root = initRoot();
+  }
+  activate() {
+    // 1. create atom panel
+    atom.workspace.addRightPanel({
+      item: this.root,
+      priority: 0
+    });
+    // 2. initiate subscriptions
+    onActivate();
+    // 3. render React component
+    render(this.root);
+  }
+  deactivate(): void {
+    // remove subscriptions & unmount react app
+    onDeactivate();
+  }
+  toggle() {
+    togglePanel();
+  }
+};
+export = new Main();
+```
+
+
+### Separating
+
+### Atom API Calls
+
+### Subscriptions
+
+I'd recommend putting all Atom specific code into a folder called *atom*. You may want to adapt your plugin later to work with other editors that play well with Javascript, such as *Brackets* or *VS-Code*.
 
 ### Init
 
