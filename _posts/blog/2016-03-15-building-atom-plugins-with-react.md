@@ -1,4 +1,4 @@
-# Outline
+# The Future of Editor Plugins
 
 Ask a coder where he or she works, and you'll hear a variety of answers: at home, a coffeeshop, in an office. The reality: location isn't important, programmers work in an editor. You can customize your editor just as you might customize your workspace.
 
@@ -10,15 +10,31 @@ What if you could use modern javascript tools & frameworks to create plugins and
 
 There is a lot of untapped potential in the area of plugin development. A lot of this is due to the learning curve involved in creating a plugin.
 
-Let's look at some interesting UI dependent plugins in Atom:
+## UI Plugins
+
+Let's look at some interesting plugins that rethink UI in Atom:
+
+* [Color Picker](https://atom.io/packages/color-picker) - select Hex colors
+
+![Color Picker plugin](/img/blog/gif/color-picker.png){: .gif}
 
 * [Regex Railroad Diagram](https://atom.io/packages/regex-railroad-diagram) - regex visualizer
-* [Color Picker](https://atom.io/packages/color-picker) - select Hex colors
-* [Git Time Machine](https://atom.io/packages/git-time-machine) - visualize your Git history
-* [Floobits](https://atom.io/packages/floobits) - video chat in Atom
-* [IMDone](https://atom.io/packages/imdone-atom) - Trello style TODO lists
 
-What kind of renaissance might happen when simple & modern UI comes to Atom? Here's to the future.
+![Regex Railroad plugin](/img/blog/gif/regex-railroad.png)
+
+* [Git Time Machine](https://atom.io/packages/git-time-machine) - visualize your Git history
+
+![Git Time Machine plugin](/img/blog/gif/git-time-machine.png){: gif}
+
+* [Floobits](https://atom.io/packages/floobits) - video chat in Atom
+
+![Floobits screen share plugin](/img/blog/gif/floo-bits){: gif}
+
+
+> What kind of renaissance might happen when simple & modern UI comes to Atom?
+
+You can build Atom plugins using *React*, *Angular 2*, or your favorite UI framework. But first you have to understand Atom.
+
 
 ## Fixing Some Atom Misconceptions
 
@@ -28,21 +44,21 @@ Atom utilizes [Electron](https://github.com/atom/electron), a cross-platform des
 
 Recognize the dev tools in the image above? Yes, Electron is built on top of Chromium using Chrome's V8 Engine. In other words, you can check Atom's ES2015 support by finding:
 
-* [Atom's Electron version](https://github.com/atom/atom/blob/master/package.json) (currently 0.36.8)
-* [Electron's Chrome version](https://github.com/atom/electron/releases/tag/v0.36.0) (currently Chrome 47)
+* [Atom's Electron version](https://github.com/atom/atom/blob/master/package.json) (0.36.8)
+* [Electron's Chrome version](https://github.com/atom/electron/releases/tag/v0.36.0) (Chrome 47)
 * [Chrome's ES2015 support](https://kangax.github.io/compat-table/es6/#chrome47) (65% ES2015 coverage)
 
 Short answer: you'll be targeting ES5 for a while.
 
 #### X You must use CoffeeScript. X
-Internally Atom source code, documentation and most plugins are written in CoffeeScript. Not a fan of CoffeeScript? Well, CoffeeScript isn't necessary to hack Atom, only a good understanding of how `.coffee` and `.cson` files compile to JS.
+Internally Atom source code, documentation and most plugins are written in CoffeeScript. Not a fan of CoffeeScript? Well, CoffeeScript isn't necessary to hack Atom, but you will require a good understanding of how `.coffee` and `.cson` files compile to JS.
 
-I'd recommend learning the basics from the [CoffeeScript Guide](http://coffeescript.org/) combined with using an online transpiler like [js2.coffee](http://js2.coffee/)). Personally, I transpile my code from TypeScript, but there are plenty of options.
+I'd recommend learning the basics from the [CoffeeScript Guide](http://coffeescript.org/) combined with using an online transpiler like [js2.coffee](http://js2.coffee/)). Personally, I transpile my code from TypeScript; Atom allows for a lot of JS options.
 
 #### X Atom is built with React. X
-Although there was an experimental effort to [move atom to React](http://blog.atom.io/2014/07/02/moving-atom-to-react.html) back in 2014, [performance concerns](https://github.com/atom/atom/pull/5624) lead to removing React.
+Although there was an experimental effort to [move atom to React](http://blog.atom.io/2014/07/02/moving-atom-to-react.html) back in 2014, [performance concerns](https://github.com/atom/atom/pull/5624) lead to React's removal.
 
-The framework of choice for Atom continues to be an [older version of Space-Pen](https://github.com/atom-archive/space-pen/tree/3.x). I suppose if it ain't broke, don't fix it. Don't worry, you can opt in or out of using space-pen for your plugins.
+The framework of choice for Atom continues to be an [older version of *Space-Pen*](https://github.com/atom-archive/space-pen/tree/3.x). I suppose if it ain't broke, don't fix it. Again, don't worry, you can opt in or out of using *Space-Pen* 3.x for your plugins.
 
 
 ## Creating Packages
@@ -53,6 +69,8 @@ Atom provides fairly comprehensive resources including a [Flight Manual](https:/
 
 ##### The bad news:
 None of these examples, and only a small fraction of these packages utilize more modern web tools or frameworks.
+
+### Boilerplate
 
 
 
