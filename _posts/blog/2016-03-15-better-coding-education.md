@@ -5,16 +5,16 @@ categories:
 - blog
 ---
 
-The road to better coding education becomes less bumpy each year; but the speed limit hasn't changed much. Online education schools such as *Codecademy* & *CodeSchool* provide an effective and efficient learning experience often referred to as **interactive learning**. Students take on a more hands on role, essentially teaching themselves. Interactive learning often involves:
+The road to better coding education becomes less bumpy each year; but the speed limit hasn't changed much. Online education schools such as *Codecademy* & *CodeSchool* provide an effective and efficient learning experience often referred to as **interactive learning**. Students take on a more hands on role, to an extent teaching themselves. Interactive learning often involves:
 
 * quick feedback on success and failures
 * step by step goals and instructions
 * helpful hints
 * gamification
 
-Interactive learning doesn't replace the classroom. Most beginner Bootcamp’s actually make *Codecademy* a large part of the curriculum, with teachers on hand to help. That's right, students are paying for Bootcamps like Galvanize where students do free online courses. Interactive learning doesn't replace teachers - it empowers them.
+Interactive learning doesn't necessarily replace the classroom. Many beginner Bootcamp’s actually make *Codecademy* a large part of the curriculum, with teachers on hand to help. That's right, students are paying for Bootcamps like [Galvanize](https://www.codecademy.com/galvanize) where students do free online courses. It's not a scam. Interactive learning doesn't replace teachers - it empowers them.
 
-But sites like *Codecademy* leave room for improvement. How so? They could:
+But sites like *Codecademy* leave continue to leave room for improvement. How so? They could:
 
 - Accelerate content development
 - Make tutorials that get better with time

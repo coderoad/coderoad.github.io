@@ -1,34 +1,50 @@
 # The Future of Editor Plugins
 
-Ask a coder where he or she works, and you'll hear a variety of answers: at home, a coffeeshop, in an office. The reality: location isn't important, programmers work in an editor. You can customize your editor just as you might customize your workspace.
+![Atom React](/img/blog/atom-react.png)
 
-The rising popularity of Github's free cross-platform editor stems from it's 'hackability'. Open up the console and you'll see Atom is a web app. Just as you might edit a web page, you can hack your editor in HTML & CSS.
+Ask a coder where he or she works, and you'll hear a variety of answers: at home, a coffeeshop, in an office. The reality: location isn't important, programmers work in an editor. And you customize your editor just as you might customize your workspace.
+
+The rising popularity of Github's free cross-platform editor stems from it's *hackability*. Open up the console and you'll see Atom is a web app. Just as you might edit a web page, you can hack your editor in HTML & CSS.
 
 ![Atom is a web app](/img/blog/atom-is-a-web-app.png)
 
 What if you could use modern javascript tools & frameworks to create plugins and customize Atom? Well, if you can make a website, you can.
 
-There is a lot of untapped potential in the area of plugin development. A lot of this is due to the learning curve involved in creating a plugin.
+Web apps have progressed ahead, leaving a lot of untapped potential in the editor.
 
-## UI Plugins
+## UI meets Plugins
 
-Let's look at some interesting plugins that rethink UI in Atom:
+Let's look at some interesting plugins that rethink UI in Atom, and provide a glimpse at what might be possible.
 
-* [Color Picker](https://atom.io/packages/color-picker) - select Hex colors
+##### [Color Picker](https://atom.io/packages/color-picker)
 
 ![Color Picker plugin](/img/blog/gif/color-picker.png){: .gif}
 
-* [Regex Railroad Diagram](https://atom.io/packages/regex-railroad-diagram) - regex visualizer
+UI for easy color selection.
+
+##### [Regex Railroad Diagram](https://atom.io/packages/regex-railroad-diagram)
 
 ![Regex Railroad plugin](/img/blog/gif/regex-railroad.png)
 
-* [Git Time Machine](https://atom.io/packages/git-time-machine) - visualize your Git history
+Visualize regex matches.
+
+##### [Git Time Machine](https://atom.io/packages/git-time-machine)
 
 ![Git Time Machine plugin](/img/blog/gif/git-time-machine.png){: gif}
 
-* [Floobits](https://atom.io/packages/floobits) - video chat in Atom
+Travel through git commits. Amazing.
 
-![Floobits screen share plugin](/img/blog/gif/floo-bits){: gif}
+##### [Floobits](https://atom.io/packages/floobits)
+
+![Floobits screen share plugin](/img/blog/gif/floo-bits.png){: gif}
+
+Shared editor and terminal with Video chat.
+
+## Few and Far Between
+
+It's 
+
+- learning curve
 
 
 > What kind of renaissance might happen when simple & modern UI comes to Atom?
