@@ -54,3 +54,5 @@ kramdown:
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+gems:
+  - jekyll-sitemap
