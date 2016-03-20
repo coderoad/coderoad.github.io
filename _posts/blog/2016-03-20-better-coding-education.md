@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Better Coding <Education />
+title: Better Coding < Education />
 categories:
 - blog
 ---
 
-The road to better coding education becomes less bumpy each year; but the speed limit hasn't changed much. Online education schools such as *Codecademy* & *CodeSchool* provide an effective and efficient learning experience often referred to as **interactive learning**. Students take on a more hands on role, to an extent teaching themselves. Interactive learning often involves:
+The road to better coding education becomes less bumpy each year; but the speed limit hasn't changed much. Online education schools such as *Codecademy* & *CodeSchool* provide an effective and efficient learning experience often referred to as **interactive learning**. Students take on a more hands on role, to an extent teaching themselves.
+
+Interactive learning often involves:
 
 * quick feedback on success and failures
 * step by step goals and instructions
