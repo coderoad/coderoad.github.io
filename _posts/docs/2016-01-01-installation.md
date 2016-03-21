@@ -11,6 +11,15 @@ To play a **tutorial**, you'll only need **Atom-CodeRoad**.
 
 But to build a tutorial, you'll also need the **CodeRoad-CLI**.
 
+### Requirements
+
+Atom CodeRoad has several key dependencies before starting:
+
+* *NodeJS* > 0.10.x. Check your version with `> node -v`.
+    - download a newer version [here](https://nodejs.org).
+* *NPM* 3.x+. Check your version with `> npm -v`.
+    - update with `> npm install -g npm`
+
 ### Atom CodeRoad
 
 Use [Atom CodeRoad](https://github.com/coderoad/atom-coderoad) to view and play your tutorial.
@@ -41,6 +50,7 @@ You can setup a project quickly by typing `> npm init --y` into the command line
 
 Now you can install a tutorial. Run `> npm install --save-dev $THE-PACKAGE-NAME$` to save the tutorial as a package development dependency. If you run *Atom-CodeRoad* you should see the tutorial appear on the first screen.
 
+> If you are stuck at a screen that says 'install a tutorial', try updating your version of NPM to 3.x+.
 
 ### CodeRoad-CLI
 
