@@ -1,31 +1,29 @@
- <aside class="col-md-3 col-xs-12" role="complementary">
-    <div class="bs-docs-sidebar hidden-print">
-      <ul class="nav sidebar">
+  <div class="col-md-3" role="complementary">
+    <div class="bs-docs-sidebar hidden-print affix-top">
+      <ul class="nav bs-docs-sidenav">
         <li>
           <a class="page-scroll" href="#overview">
             Overview
           </a>
         </li>
-
         {% for post in site.categories.docs reversed %}
         <li>
-          <a class="page-scroll" href="#{{ post.id }}">{{ post.title }}</a>
+          <a class="page-scroll" href="#{{ post.id }}">
+          {{ post.title }}
+        </a>
         </li>
         {% endfor %}
 
       </ul>
-      <a class="back-to-top" href="https://github.com/coderoad/coderoad.github.io/issues">
-        <i class="fa fa-question"></i> Questions
+      <a class="page-scroll back-to-top" href="https://github.com/coderoad/coderoad.github.io/issues">
+        <i class="fa fa-question"></i> Questions or Issues
       </a>
-      <a class="back-to-top" href="https://github.com/coderoad/coderoad.github.io/issues">
-        <i class="fa fa-exclamation"></i> Issues
-      </a>
-      <a class="back-to-top" href="#top">
-        <i class="fa fa-chevron-up"></i> Back to top
+      <a class="page-scroll back-to-top" href="#top">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to top
       </a>
 
 
 
     </div>
 
-  </aside>
+  </div>
