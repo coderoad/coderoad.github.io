@@ -1,3 +1,104 @@
 <script>
-$(function(){var t="";$(".bs-docs-section").each(function(){var e=$(this).find("h1[id]").first(),o=$(this).find("h2[id], h3[id]");e.length&&(t+='<li><a href="#'+e[0].id+'">'+e.clone().children().remove().end().text()+"</a>",o.length&&(t+='<ul class="nav">',o.each(function(){t+='<li><a href="#'+this.id+'">'+$(this).clone().children().remove().end().text()+"</a></li>"}),t+="</ul>"),t+="</li>")}),""==t?($("[role=complementary]").hide(),$("[role=main]").toggleClass("col-md-9 col-md-12")):$(".bs-docs-sidenav").html(t),$("[data-bootbox]").on("click",function(){var t=$("#"+$(this).data("bootbox"));bootbox.alert({title:t.attr("title"),message:t.html()})}),!function(t){t(function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var e=document.createElement("style");e.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),document.querySelector("head").appendChild(e)}var o=t(window),i=t(document.body);t(".navbar").outerHeight(!0)+10,i.scrollspy({target:".bs-docs-sidebar"}),o.on("load",function(){i.scrollspy("refresh")}),t(".bs-docs-container [href=#]").click(function(t){t.preventDefault()}),setTimeout(function(){var e=t(".bs-docs-sidebar");e.affix({offset:{top:function(){var o=e.offset().top,i=parseInt(e.children(0).css("margin-top"),10),n=t(".bs-docs-nav").height();return this.top=o-n-i},bottom:function(){return this.bottom=t(".bs-docs-footer").outerHeight(!0)}}})},100),setTimeout(function(){t(".bs-top").affix()},100)})}(jQuery),$(".gif").hover(function(){var t=$(this).attr("src"),e=t.substring(0,t.lastIndexOf("."))+".gif";$(this).attr("src",e)},function(){var t=$(this).attr("src"),e=t.substring(0,t.lastIndexOf("."))+".png";$(this).attr("src",e)})});
+  $(function() {
+    // build side menu
+    var html = '';
+
+    $('.bs-docs-section').each(function() {
+      var h1 = $(this).find('h1[id]').first(),
+        h23 = $(this).find('h2[id], h3[id]');
+
+      if (h1.length) {
+        html += '<li><a href="#' + h1[0].id + '">' + h1.clone().children().remove().end().text() + '</a>';
+
+        if (h23.length) {
+          html += '<ul class="nav">';
+          h23.each(function() {
+            html += '<li><a href="#' + this.id + '">' + $(this).clone().children().remove().end().text() + '</a></li>';
+          });
+          html += '</ul>';
+        }
+
+        html += '</li>';
+      }
+    });
+
+    if (html == '') {
+      $('[role=complementary]').hide();
+      $('[role=main]').toggleClass('col-md-9 col-md-12');
+    } else {
+      $('.bs-docs-sidenav').html(html);
+    }
+
+    $('[data-bootbox]').on('click', function() {
+      var $target = $('#' + $(this).data('bootbox'));
+      bootbox.alert({
+        title: $target.attr('title'),
+        message: $target.html()
+      });
+    });
+
+    /*!
+     * JavaScript for Bootstrap's docs (http://getbootstrap.com)
+     * Copyright 2011-2014 Twitter, Inc.
+     * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+     * details, see http://creativecommons.org/licenses/by/3.0/.
+     */
+    ! function(a) {
+      a(function() {
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+          var b = document.createElement("style");
+          b.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),
+            document.querySelector("head").appendChild(b)
+        } {
+          var c = a(window),
+            d = a(document.body);
+          a(".navbar").outerHeight(!0) + 10
+        }
+        d.scrollspy({
+            target: ".bs-docs-sidebar"
+          }),
+          c.on("load", function() {
+            d.scrollspy("refresh")
+          }),
+          a(".bs-docs-container [href=#]").click(function(a) {
+            a.preventDefault()
+          }),
+          setTimeout(function() {
+            var b = a(".bs-docs-sidebar");
+            b.affix({
+              offset: {
+                top: function() {
+                  var c = b.offset().top,
+                    d = parseInt(b.children(0).css("margin-top"), 10),
+                    e = a(".bs-docs-nav").height();
+                  return this.top = c - e - d
+                },
+                bottom: function() {
+                  return this.bottom = a(".bs-docs-footer").outerHeight(!0)
+                }
+              }
+            })
+          }, 100),
+          setTimeout(function() {
+            a(".bs-top").affix()
+          }, 100)
+      })
+    }(jQuery);
+  });
+</script>
+
+<script>
+  $(function() {
+    $('.gif').hover(function() {
+      // on mouse enter
+      var path = $(this).attr('src');
+      var gif = path.substring(0, path.lastIndexOf('.')) + '.gif';
+      $(this).attr('src', gif);
+    }, function() {
+      // on mouse leave
+      var path = $(this).attr('src');
+      var png = path.substring(0, path.lastIndexOf('.')) + '.png';
+      $(this).attr('src', png);
+    });
+  });
 </script>
