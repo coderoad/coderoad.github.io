@@ -103,7 +103,7 @@ Even when I taught coding in South Korea, internet connectivity on campus was an
 
 ## Free
 
-At the end of the day, online education companies have to pay the bills. There are server costs, salaries, investors, etc.
+At the end of the day, online education companies have to pay the bills. There are server costs, salaries, offices, and millions of dollars from investors. While *Codecademy* was once entirely free, now they've needed to put newer content behind a paywall. 
 
 *CodeRoad* is hosted on Github & distributed via NPM. The editor and tutorial building tools are open-source and will remain free. Any tutorials built are the work of the creators.
 
