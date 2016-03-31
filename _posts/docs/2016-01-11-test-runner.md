@@ -39,7 +39,11 @@ Also notice that the runner in the above example handles any `console.log` state
 
 ```js
 if (!match) {
-  console.log(data);
+  try {
+    console.dir(JSON.parse(JSON.stringify(data)));
+  } catch (e) {
+    console.log(data);
+  }
   return;
 }
 ```
