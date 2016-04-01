@@ -150,7 +150,6 @@ Page 1 description
 
 Further editor actions will be added to CodeRoad. These may include:
 
-* changing the cursor position
 * replacing content
 * decorating keywords
 

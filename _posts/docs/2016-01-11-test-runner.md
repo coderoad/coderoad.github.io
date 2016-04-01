@@ -37,6 +37,8 @@ export default function runner(testFile, config, handleResult) {
 
 Also notice that the runner in the above example handles any `console.log` statements. A special character string is added before the result, any data without that match is passed to the log.
 
+`console.dir` is used to make objects & arrays more accessible in the console.
+
 ```js
 if (!match) {
   try {
