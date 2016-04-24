@@ -63,8 +63,6 @@ A JSON object of configurations that may be needed for setting up your runner. S
 ```json
 {
   "dir": "path/to/user/project",
-  "tutorial": "coderoad-package-name",
-  "tutorialDir": "/path/to/installed/tutorial/",
   "taskPosition": 0
 }
 ```
