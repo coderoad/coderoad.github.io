@@ -31,9 +31,9 @@ Running **create** generates:
       "mocha-coderoad": "^0.3.1"
   },
   "coderoad": {
-      "testDir": "test",
+      "dir": "tutorial",
       "testSuffix": ".spec.js",
-      "testRunner": "mocha-coderoad"
+      "runner": "mocha-coderoad"
   }
 }
 ```

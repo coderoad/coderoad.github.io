@@ -50,7 +50,7 @@ Defaults for loading tests are specified in the tutorial *package.json* file.
 }
 ```
 
-`testDir` is appended to all *@test* calls, and `testSuffix` is added to the end.
+`dir` is appended to all *@test* calls, and `testSuffix` is added to the end.
 
 *@test* loads a test file. It is important that these files are loaded in the correct order. *@test* can take a single test file, or an array of test files.
 

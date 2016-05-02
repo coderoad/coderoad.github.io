@@ -11,8 +11,8 @@ description: > # "Free interactive coding tutorials inside of the Atom editor. B
 
 # info
 image: https://coderoad.github.io/img/coderoad-header.jpg
-atomVersion: 0.6.0
-cliVersion: 0.3.26
+atomVersion: 0.9.0
+cliVersion: 0.5.0
 video: DbLpdgrYVOU
 
 # tutorials
