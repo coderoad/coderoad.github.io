@@ -130,7 +130,7 @@ Set the cursor position.
   function example() {
     ::>
   }
-```
+ ```
 ))
 ```
 

@@ -30,7 +30,7 @@ Install the *Atom-CodeRoad* package: `> apm install atom-coderoad`
 
 For an example of how to do this, *hover* over the image below:
 
-![Install atom-coderoad](/img/gif/install-atom-coderoad.png){: .gif}
+![Install atom-coderoad](/images/docs/install-atom-coderoad.png){: .gif}
 
 Toggle open *Atom-CodeRoad* using the *Packages* menu or press *ctrl-alt-0*.
 
@@ -39,7 +39,7 @@ Toggle open *Atom-CodeRoad* using the *Packages* menu or press *ctrl-alt-0*.
 
 To install a tutorial, setup a *package.json* file and save the tutorial as a dependency. Make sure [NodeJS](nodejs.org) is already installed.
 
-![Install a Tutorial](/img/gif/install-tutorial.png){: .gif}
+![Install a Tutorial](/images/docs/install-tutorial.png){: .gif}
 
 You can setup a project quickly by typing `> npm init --y` into the command line in your project's folder. This agrees to all of the defaults for your newly created *package.json* file.
 
@@ -60,6 +60,6 @@ Install *CodeRoad-CLI*. Make sure [NodeJS](nodejs.org) is already installed
 
 It's recommended you also enable *autosave* in Atom.
 
-![Enable autosave in Atom](/img/gif/autosave.png){: .gif}
+![Enable autosave in Atom](/images/docs/autosave.png){: .gif}
 
 Tutorials run unit tests on save, *autosave* can speed up the process.

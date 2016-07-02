@@ -58,5 +58,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   parse_block_html: true
+  default_lang: js
 #sass:
 #  style: compressed
