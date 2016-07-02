@@ -5,34 +5,31 @@ tagline: Tutorial Building API
 ---
 
 <div id="docs" role="main">
+	<p>The docs are a deeper read. It's recommended you get setup with the plugins and gain an understanding of how CodeRoad works before continuing.</p>
+	<!-- OverView -->
+	<section id="suggestions">
+		<ul class="actions" style="text-align: center;">
+			<li><a class="button special" href="/atom-coderoad.html">Quick Start</a></li>
+			<li><a class="button" href="/builder-coderoad.html">Builder Start</a></li>
+			<li><a class="button" href="/overview.html">Overview</a></li>
+		</ul>
+	</section>
 
-		<!-- OverView -->
-		<section id="overview">
-			<h2>Overview</h2>
-			<blockquote>
-				CodeRoad aims to make building & sharing interactive coding tutorials as easy as possible.
-			</blockquote>
-			<p>We hope to create fun and maintainable code tutorials that actually improve with time. We hope to see programming students become teachers, teachers become empowered, and coders become better, faster. But first, let's get some interactive coding tutorials
-				built. That's where you come in.</p>
-			<a class="button special"
-				href="/overview">How It Works</a>
-		</section>
-
-		<!-- Articles -->
-		{% for post in site.categories.docs reversed %}
-		<br />
-		<br />
-		<section id="{{ post.id }}">
-			<h2>{{ post.title }}</h2>
-			<div>{{ post.content }}</div>
-			<br>
-			<a class="button" href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/docs/{{post.file}}">
-				<i class="fa fa-pencil fa-fw"></i>
-				<span class="network-name">
+	<!-- Articles -->
+	{% for post in site.categories.docs reversed %}
+	<br />
+	<br />
+	<section id="{{ post.id }}">
+		<h2>{{ post.title }}</h2>
+		<div>{{ post.content }}</div>
+		<br>
+		<a class="button" href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/docs/{{post.file}}">
+			<i class="fa fa-pencil fa-fw"></i>
+			<span class="network-name">
 	        Edit {{post.title}} Docs
 				</span>
-			</a>
-		</section>
-		{% endfor %}
+		</a>
+	</section>
+	{% endfor %}
 
 </div>
