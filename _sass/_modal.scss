@@ -2,16 +2,27 @@
   margin-top: 45px;
 }
 
+#btn-close-modal {
+  padding: 45px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-align: center;
+}
+
 a.modal-link:before {
   content: '';
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-  background-size: 100%;
-  background: url('../css/images/play.svg') center no-repeat;
-  opacity: .50;
+  background-size: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../css/images/play.svg');
+  opacity: .5;
 }
 a.modal-link:hover:before {
-  opacity: .55;
+  opacity: .65;
 }
