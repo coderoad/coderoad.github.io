@@ -1,0 +1,62 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: CodeRoad
+description: |
+  Interactive Coding Tutorials
+  In Your Editor
+owner: Shawn McKay # or company name
+first_published: 2016 # if migrating another site, the year of your first publish
+email: coderoad-app@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://coderoad.github.com" # the base hostname & protocol for your site
+social:
+  twitter: https://twitter.com/coderoadapp
+  github: https://github.com/coderoad
+  #linkedin-square: https://linkedin.com/in/<username>
+  #facebook-official: https://facebook.com/<username>
+  google-plus-square: https://plus.google.com/114957986906029613694/about
+  # email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
+#sass:
+#  style: compressed
