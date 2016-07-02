@@ -9,6 +9,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/mixins';
 @import 'font-awesome';
 @import 'code-blocks';
+@import 'modal';
 
 @import url( 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 /*
@@ -1396,6 +1397,12 @@ body.is-loading {
 				max-width: none;
 			}
 		}
+	}
+}
+.modal-content {
+	img {
+		display: block;
+		margin: 0 auto;
 	}
 }
 /* Main */

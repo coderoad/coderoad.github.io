@@ -19,22 +19,23 @@ layout: landing
 	<div class="inner">
 		<header class="major">
 			<h2>About CodeRoad</h2>
-			<p>CodeRoad is a coding education platform aimed at creating interactive coding lessons. CodeRoad makes it easy to create, share, edit, and publish video-game-like tutorials that run alongside your code in the editor. It currently works with Javascript & Python, with more languages to come.</p>
+			<p>CodeRoad is a coding education platform aimed at creating interactive coding lessons. CodeRoad makes it easy to create, share, edit, and publish video-game-like tutorials that run alongside your code in the editor. It currently works with Javascript
+				& Python, with more languages to come.</p>
 		</header>
 		<ul class="icons major">
 			<li>
 				<span class="icon">
-										<img alt="Javascript"
-											src="images/devicons/javascript-plain.svg"
-											height="70px" />
-									</span>
+					<img alt="Javascript"
+						src="images/devicons/javascript-plain.svg"
+						height="70px" />
+				</span>
 			</li>
 			<li>
 				<span class="icon style2">
-										<img alt="Python"
-											src="images/devicons/python-original.svg"
-											height="75px" />
-									</span>
+					<img alt="Python"
+						src="images/devicons/python-original.svg"
+						height="75px" />
+					</span>
 			</li>
 		</ul>
 	</div>
@@ -42,30 +43,46 @@ layout: landing
 
 <!-- Two -->
 <section id="two" class="wrapper alt style2">
+
+	<!-- Atom CodeRoad -->
 	<section class="spotlight">
-		<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+		<div class="image" >
+			<a id="atom-coderoad" href="#atom-coderoad-demo" class="modal-link">
+				<img alt="Atom-CodeRoad Demo"
+				src="images/atom-coderoad.jpg"/>
+			</a>
+		</div>
+
 		<div class="content">
 			<h2>Inside Your Code Editor</h2>
 
 			<p>CodeRoad is a free plugin for the popular
 				<a href="https://atom.io">Atom Editor</a>.
-				<br />
-				With the "atom-coderoad" plugin, code in a real editor environment alongside your other favorite plugins.</p>
+				<br /> With the "atom-coderoad" plugin, code in a real editor environment alongside your other favorite plugins.</p>
 			<ul class="actions">
 				<li><a href="#" class="button special">Atom-CodeRoad</a></li>
 			</ul>
 		</div>
 	</section>
+
+	<!-- Builder-CodeRoad -->
 	<section class="spotlight">
-		<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+		<div class="image">
+			<a id="builder-coderoad" href="#builder-coderoad-demo" class="modal-link">
+				<img alt="Builder CodeRoad Demo"
+				src="images/builder-demo.jpg" />
+			</a>
+		</div>
 		<div class="content">
 			<h2>Create your Own Tutorials</h2>
-			<p>Build tutorials using tools developers are already familiar with: Markdown & Unit Tests. Make tutorials is made easy with the new "builder-coderoad" plugin.</p>
+			<p>Build tutorials using simple and familiar tools: <a href="http://www.markdowntutorial.com/">Markdown</a> & unit tests. Making tutorials is easy with the new "builder-coderoad" plugin.</p>
 			<ul class="actions">
 				<li><a href="#" class="button special">Builder-CodeRoad</a></li>
 			</ul>
 		</div>
 	</section>
+
+	<!-- Publish -->
 	<section class="spotlight">
 		<div class="image"><img src="images/pic03.jpg" alt="" /></div>
 		<div class="content">
@@ -80,18 +97,16 @@ layout: landing
 	<div class="inner">
 		<header class="major">
 			<h2>Tutorials</h2>
-			<p>Interactive lessons = learning faster.<br />
-			People learn best by doing, with quick feedback & hints. If you like Codecademy, we hope you'll love CodeRoad.</p>
+			<p>Interactive lessons = learning faster.
+				<br /> People learn best by doing, with quick feedback & hints. If you like Codecademy, we hope you'll love CodeRoad.</p>
 		</header>
 		<ul class="features">
+			{% for tutorial in site.tutorials %}
 			<li>
-				<h3><span style="color: yellow">JS</span> Functional School</h3>
-				<p>An array method adventure.</p>
+				<h3><span style="color: yellow">{{tutorial.language}}</span> {{tutorial.title}}</h3>
+				<p>{{tutorial.description}}</p>
 			</li>
-			<li>
-				<h3><span style="color: yellow">JS</span> ES2015</h3>
-				<p>Practice using ES2015 features.</p>
-			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </section>
@@ -101,12 +116,37 @@ layout: landing
 	<div class="inner">
 		<header>
 			<h2>Become a Contributer</h2>
-			<p>Looking to adapt your favorite coding language for CodeRoad?
-				Interested in adding new features? Find out more.</p>
+			<p>Looking to adapt your favorite coding language for CodeRoad? Interested in adding new features? Find out more.</p>
 		</header>
 		<ul class="actions vertical">
-			<li><a href="#" class="button fit special">How it Works</a></li>
-			<li><a href="#" class="button fit">Docs</a></li>
+			<li><a href="/explanation.html" class="button fit special">How it Works</a></li>
+			<li><a href="/docs.html" class="button fit">Docs</a></li>
 		</ul>
 	</div>
 </section>
+
+
+
+
+
+<!-- Atom-CodeRoad Modal -->
+<div id="atom-coderoad-demo" class="modal">
+    <div  id="btn-close-modal" class="close-atom-coderoad-demo">
+        CLOSE MODAL
+    </div>
+
+    <div class="modal-content">
+      <img alt="Atom-CodeRoad Demo" src="images/atom-coderoad.gif" height="450px"/>
+    </div>
+</div>
+
+<!-- Builder-CodeRoad Modal -->
+<div id="builder-coderoad-demo" class="modal">
+    <div  id="btn-close-modal" class="close-builder-coderoad-demo">
+        CLOSE MODAL
+    </div>
+
+    <div class="modal-content">
+      <img alt="Builder-CodeRoad Demo" src="images/builder-demo.gif" height="450px"/>
+    </div>
+</div>
