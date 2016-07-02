@@ -14,4 +14,4 @@ Test Runners may have pre-made [Atom snippets](https://atom.io/docs/latest/using
 
 For example, typing the snippet `mochacr-f` will generate an entire set of tests for a *mocha-coderoad* function. See an example:
 
-![Mocha Coderoad Test Snippets](/img/gif/snippets.png){: .gif}
+![Mocha Coderoad Test Snippets](/images/docs/snippets.png){: .gif}

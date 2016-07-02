@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'libs/vars';
+@import  'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
@@ -14,106 +14,84 @@
 */
 
 /* Icon */
-
-	.icon {
-		&.major {
-			border: none;
-
-			&:before {
-				font-size: 3em;
-			}
+.icon {
+	&.major {
+		border: none;
+		&:before {
+			font-size: 3em;
 		}
 	}
-
+}
 /* Form */
-
-	label {
-		color: _palette(accent7, fg-bold);
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border: solid 1px _palette(accent7, border);
-	}
-
+label {
+	color: _palette(accent7, fg-bold);
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+	border: solid 1px _palette(accent7, border);
+}
 /* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		border: solid 2px _palette(accent7, border);
-
-		&.special {
-			border: 0 !important;
-		}
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: solid 2px _palette(accent7, border);
+	&.special {
+		border: 0 !important;
 	}
-
+}
 /* Page Wrapper + Menu */
-
+#menu {
+	display: none;
+}
+body.is-menu-visible {
 	#menu {
-		display: none;
+		display: block;
 	}
-
-	body.is-menu-visible {
-		#menu {
-			display: block;
-		}
-	}
-
+}
 /* Header */
-
-	#header {
-		nav {
-			> ul {
-				> li {
-					> a {
-						&.menuToggle {
-							&:after {
-								display: none;
-							}
+#header {
+	nav {
+		> ul {
+			> li {
+				> a {
+					&.menuToggle {
+						&:after {
+							display: none;
 						}
 					}
 				}
 			}
 		}
 	}
-
+}
 /* Banner + Wrapper (style4) */
-
-	#banner,
-	.wrapper.style4 {
+#banner,
+.wrapper.style4 {
+	-ms-behavior: url('js/ie/backgroundsize.min.htc');
+	&:before {
+		display: none;
+	}
+}
+/* Banner */
+#banner {
+	.more {
+		height: 4em;
+		&:after {
+			display: none;
+		}
+	}
+}
+/* Main */
+#main {
+	> header {
 		-ms-behavior: url('js/ie/backgroundsize.min.htc');
-
 		&:before {
 			display: none;
 		}
 	}
-
-/* Banner */
-
-	#banner {
-		.more {
-			height: 4em;
-
-			&:after {
-				display: none;
-			}
-		}
-	}
-
-/* Main */
-
-	#main {
-		> header {
-			-ms-behavior: url('js/ie/backgroundsize.min.htc');
-
-			&:before {
-				display: none;
-			}
-		}
-	}
+}
