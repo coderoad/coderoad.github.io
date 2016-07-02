@@ -50,17 +50,6 @@ social:
   #forumbee:
   #tripadvisor:
   #amazon:
-tutorials:
-  - Functional School:
-    title: Functional School
-    language: JS
-    url: https://github.com/coderoad/coderoad-functional-school
-    description: A trip through functional programming in Javascript using common built-in Javascript array methods such as map & reduce.
-  - ES2015:
-    title: ES2015
-    language: JS
-    url: https://github.com/shmck/coderoad-es2015
-    description: Practice refactoring with ES2015 features.
 
 
 # Build settings

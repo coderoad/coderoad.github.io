@@ -4,9 +4,18 @@ title: Atom-CodeRoad
 tagline: Play Interactive Tutorials
 ---
 
-<h3>Atom-CodeRoad</h3>
-<p>Coming soon...</p>
-
-<ul>
-  <li>Setup<li>
-  <li>
+{% for post in site.categories.atom-coderoad reversed %}
+<br />
+<br />
+<section id="{{ post.id }}">
+  <h2>{{ post.title }}</h2>
+  <div>{{ post.content }}</div>
+  <br>
+  <a class="button" href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/docs/{{post.file}}">
+    <i class="fa fa-pencil fa-fw"></i>
+    <span class="network-name">
+      Edit {{post.title}} Docs
+    </span>
+  </a>
+</section>
+{% endfor %}

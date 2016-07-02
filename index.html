@@ -103,13 +103,15 @@ layout: landing
 			<p>Interactive lessons = learning faster.
 				<br /> People learn best by doing, with quick feedback & hints. If you like Codecademy, we hope you'll love CodeRoad.</p>
 		</header>
+
+		<!-- Tutorial List -->
 		<ul class="features">
-			{% for tutorial in site.tutorials %}
+			{% for tutorial in site.categories.tutorials reversed %}
 			<li>
 				<h3>
 					<span style="color: yellow">{{tutorial.language}}</span> {{tutorial.title}}
 				</h3>
-				<p>{{tutorial.description}}</p>
+				<p>{{tutorial.content}}</p>
 			</li>
 			{% endfor %}
 		</ul>
@@ -125,7 +127,7 @@ layout: landing
 		</header>
 		<ul class="actions vertical">
 			<li><a href="/overview.html" class="button fit special">How it Works</a></li>
-			<li><a href="/docs.html" class="button fit">Docs</a></li>
+			<li><a href="/atom-coderoad.html" class="button fit">Quick Start</a></li>
 		</ul>
 	</div>
 </section>

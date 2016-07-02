@@ -4,7 +4,7 @@ title: Development
 id: development
 file: 2016-01-02-development.md
 categories:
-- docs
+- builder-coderoad
 ---
 
 Get setup quickly with CodeRoad: either [clone a tutorial repo](https://git-scm.com/docs/git-clone) or use the *CodeRoad-CLI*.

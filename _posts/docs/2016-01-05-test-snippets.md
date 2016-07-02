@@ -2,7 +2,7 @@
 layout: docs
 title: Test Snippets
 id: test-snippets
-file: 2016-01-07-test-snippets.md
+file: 2016-01-05-test-snippets.md
 categories:
 - docs
 ---
