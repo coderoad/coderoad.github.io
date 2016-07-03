@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Test Snippets
 id: test-snippets
 file: 2016-01-05-test-snippets.md

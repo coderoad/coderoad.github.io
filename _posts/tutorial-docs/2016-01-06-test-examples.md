@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Test Examples
 id: test-examples
 file: 2016-01-06-test-examples.md

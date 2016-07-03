@@ -4,18 +4,12 @@ title: Atom-CodeRoad
 tagline: Play Interactive Tutorials
 ---
 
-{% for post in site.categories.atom-coderoad reversed %}
-<br />
-<br />
-<section id="{{ post.id }}">
-  <h2>{{ post.title }}</h2>
-  <div>{{ post.content }}</div>
-  <br>
-  <a class="button" href="https://github.com/coderoad/coderoad.github.io/edit/master/_posts/atom-coderoad/{{post.file}}">
-    <i class="fa fa-pencil fa-fw"></i>
-    <span class="network-name">
-      Edit {{post.title}} Docs
-    </span>
-  </a>
-</section>
+{% for doc in site.categories.atom-coderoad reversed %}
+	{% include docs.html
+    id=doc.id
+		title=doc.title
+		content=doc.content
+		editPath="//github.com/coderoad/coderoad.github.io/edit/master/_posts/atom-coderoad"
+    file=doc.file
+	%}
 {% endfor %}

@@ -37,8 +37,8 @@ layout: landing
 	<!-- Features -->
 	{% for feature in site.categories.features reversed %}
 	<section class="spotlight wide">
-		<div class="image" >
-			{% if feature.image.href %}
+		<div class="image">
+			{% if feature.image.alt %}
 			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
 				<img alt="{{feature.image.alt}}"
 				src="{{feature.image.src}}"

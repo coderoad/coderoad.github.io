@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Quick Start
 id: install
 file: 2016-01-02-installation.md

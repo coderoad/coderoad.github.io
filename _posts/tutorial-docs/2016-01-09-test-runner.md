@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Test Runners
 id: test-runners
 file: 2016-01-09-test-runner.md

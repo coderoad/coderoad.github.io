@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: CodeRoad API
 id: coderoad-API
 file: 2016-01-02-coderoad-api.md
