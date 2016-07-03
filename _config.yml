@@ -50,7 +50,13 @@ social:
   #forumbee:
   #tripadvisor:
   #amazon:
-
+languages:
+  - Javascript:
+    name: JS
+    icon: javascript-plain.svg
+  - Python:
+    name: Python
+    icon: python-original.svg
 
 # Build settings
 markdown: kramdown

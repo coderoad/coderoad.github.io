@@ -8,7 +8,7 @@ layout: landing
 		<h2>{{ site.title }}</h2>
 		<p>{{ site.description | markdownify }}</p>
 		<ul class="actions">
-			<li><a href="#" class="button special">Install</a></li>
+			<li><a href="/atom-coderoad.html" class="button special">Quick Start</a></li>
 		</ul>
 	</div>
 	<a href="#one" class="more scrolly">Learn More</a>
@@ -19,24 +19,12 @@ layout: landing
 	<div class="inner">
 		<header class="major">
 			<h2>About CodeRoad</h2>
-			<p>CodeRoad is a coding education platform aimed at creating interactive coding lessons. CodeRoad makes it easy to create, share, edit, and publish video-game-like tutorials that run alongside your code in the editor. It currently works with Javascript
-				& Python, with more languages to come.</p>
+			<p>CodeRoad is a coding education platform aimed at creating interactive coding lessons. CodeRoad makes it easy to create, share, edit, and publish video-game-like tutorials that run alongside your code in the editor. It currently works with Javascript & Python, with more languages to come.</p>
 		</header>
 		<ul class="icons major">
-			<li>
-				<span class="icon">
-					<img alt="Javascript"
-						src="images/devicons/javascript-plain.svg"
-						height="70px" />
-				</span>
-			</li>
-			<li>
-				<span class="icon style2">
-					<img alt="Python"
-						src="images/devicons/python-original.svg"
-						height="75px" />
-					</span>
-			</li>
+			{% for lang in site.languages %}
+				{% include language-icon.html language=lang.name icon=lang.icon %}
+			{% endfor %}
 		</ul>
 	</div>
 </section>
@@ -45,7 +33,7 @@ layout: landing
 <section id="two" class="wrapper alt style2">
 
 	<!-- Atom CodeRoad -->
-	<section class="spotlight">
+	<section class="spotlight wide">
 		<div class="image" >
 			<a id="atom-coderoad" href="#atom-coderoad-demo" class="modal-link">
 				<img alt="Atom-CodeRoad Demo"
@@ -66,7 +54,7 @@ layout: landing
 	</section>
 
 	<!-- Builder-CodeRoad -->
-	<section class="spotlight">
+	<section class="spotlight wide">
 		<div class="image">
 			<a id="builder-coderoad" href="#builder-coderoad-demo" class="modal-link">
 				<img alt="Builder CodeRoad Demo"
@@ -83,7 +71,7 @@ layout: landing
 	</section>
 
 	<!-- Publish -->
-	<section class="spotlight">
+	<section class="spotlight wide">
 		<div class="image">
 			<img alt="Publish Tutorial"
 			src="images/publish.png" />
@@ -104,17 +92,8 @@ layout: landing
 				<br /> People learn best by doing, with quick feedback & hints. If you like Codecademy, we hope you'll love CodeRoad.</p>
 		</header>
 
-		<!-- Tutorial List -->
-		<ul class="features">
-			{% for tutorial in site.categories.tutorials reversed %}
-			<li>
-				<h3>
-					<span style="color: yellow">{{tutorial.language}}</span> {{tutorial.title}}
-				</h3>
-				<p>{{tutorial.content}}</p>
-			</li>
-			{% endfor %}
-		</ul>
+			{% include tutorial-list.html %}
+
 	</div>
 </section>
 
@@ -126,37 +105,13 @@ layout: landing
 			<p>Looking to adapt your favorite coding language for CodeRoad? Interested in adding new features? Find out more.</p>
 		</header>
 		<ul class="actions vertical">
-			<li><a href="/overview.html" class="button fit special">How it Works</a></li>
-			<li><a href="/atom-coderoad.html" class="button fit">Quick Start</a></li>
+			<li><a href="/atom-coderoad.html" class="button fit special">Quick Start</a></li>
+				<li><a href="/overview.html" class="button fit">Overview</a></li>
 		</ul>
 	</div>
 </section>
 
 
-
-
-
-<!-- Atom-CodeRoad Modal -->
-<div id="atom-coderoad-demo" class="modal">
-  <div id="btn-close-modal" class="close-atom-coderoad-demo">
-    <img src="css/images/close.svg" alt="close" height="35px"/>
-  </div>
-  <div class="modal-content">
-		<h3>Atom-CodeRoad</h3>
-    <img alt="Atom-CodeRoad Demo" height="450px"
-			src="images/atom-coderoad.gif" />
-  </div>
-</div>
-
-<!-- Builder-CodeRoad Modal -->
-<div id="builder-coderoad-demo" class="modal">
-    <div id="btn-close-modal" class="close-builder-coderoad-demo">
-      <img src="css/images/close.svg" alt="close" height="35px"/>
-  </div>
-
-    <div class="modal-content">
-			<h3>Builder-CodeRoad</h3>
-      <img alt="Builder-CodeRoad Demo" height="450px"
-				src="images/builder-demo.gif" />
-    </div>
-</div>
+<!-- modals -->
+{% include modal.html id="atom-coderoad-demo" title="Atom-CodeRoad" image="atom-coderoad.gif" %}
+{% include modal.html id="builder-coderoad-demo" title="Builder-CodeRoad" image="builder-demo.gif" %}

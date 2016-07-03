@@ -1,0 +1,11 @@
+<!-- Tutorial List -->
+<ul class="features">
+    {% for tutorial in site.categories.tutorials reversed %}
+    <li>
+        <h3>
+        <span style="color: yellow">{{tutorial.language}}</span> {{tutorial.title}}
+      </h3>
+        <p>{{tutorial.content}}</p>
+    </li>
+    {% endfor %}
+</ul>
