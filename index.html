@@ -15,19 +15,21 @@ layout: landing
 </section>
 
 <!-- One -->
+{% for summary in site.categories.summary %}
 <section id="one" class="wrapper style1 special">
 	<div class="inner">
 		<header class="major">
-			<h2>About CodeRoad</h2>
-			<p>CodeRoad is a coding education platform aimed at creating interactive coding lessons. CodeRoad makes it easy to create, share, edit, and publish video-game-like tutorials that run alongside your code in the editor. It currently works with Javascript & Python, with more languages to come.</p>
+			<h2>{{summary.title}}</h2>
+			{{summary.content}}
 		</header>
 		<ul class="icons major">
-			{% for lang in site.languages %}
+			{% for lang in summary.languages %}
 				{% include language-icon.html language=lang.name icon=lang.icon %}
 			{% endfor %}
 		</ul>
 	</div>
 </section>
+{% endfor %}
 
 <!-- Two -->
 <section id="two" class="wrapper alt style2">
