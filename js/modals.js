@@ -1,4 +1,5 @@
 $(function() {
+  // modals
   $("#atom-coderoad").animatedModal({
     modalTarget: 'atom-coderoad-demo',
     animatedIn:'zoomIn',
@@ -15,4 +16,11 @@ $(function() {
         .attr("src", "images/demos/builder-demo.gif");
     }
   });
+
+  // images
+  $("img.lazy").lazyload({
+    effect: "fadeIn",
+    threshold : 200,
+  });
+
 });

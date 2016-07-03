@@ -40,12 +40,12 @@ layout: landing
 		<div class="image">
 			{% if feature.image.alt %}
 			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
-				<img alt="{{feature.image.alt}}"
+				<img alt="{{feature.image.alt}}" class="lazy"
 				src="{{feature.image.src}}"
 				height="328px" width="574px"/>
 			</a>
 			{% else %}
-				<img alt="{{feature.image.alt}}"
+				<img alt="{{feature.image.alt}}" class="lazy"
 					src="{{feature.image.src}}"
 					height="328px" width="574px" />
 			{% endif %}
