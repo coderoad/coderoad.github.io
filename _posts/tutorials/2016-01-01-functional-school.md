@@ -3,7 +3,7 @@ layout: tutorial
 title: Functional School
 file: 2016-01-01-functional-school.md
 language: JS
-url: https://github.com/coderoad/coderoad-functional-school
+link: //github.com/coderoad/coderoad-functional-school
 categories:
 - tutorials
 ---

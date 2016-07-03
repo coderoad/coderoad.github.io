@@ -1,0 +1,35 @@
+---
+layout: page
+title: Contributors
+tagline: Behind the Scenes
+---
+
+{% for person in site.categories.contributors reversed %}
+<section id="{{ person.name }}">
+  {% if person.image %}
+  <div>
+    <span class="image left">
+      <img src="images/contributors/{{person.image}}" alt="" />
+    </span>
+  </div>
+  {% endif %}
+  <div>
+  <h2>{{ person.name }}</h2>
+  <div>{{ person.content }}</div>
+  <ul class="icons">
+      {% for socloc in person.social %} {% if socloc[1] %} {% if socloc[0] == 'email' %}
+      <li><a href="{{ socloc[1] }}" class="icon fa-envelope-o"><span class="label">E-mail</span></a></li>
+      {% else %}
+      <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"><span class="label">{{ socloc[0] }}</span></a></li>
+      {% endif %} {% endif %} {% endfor %}
+  </ul>
+</div>
+</section>
+{% endfor %}
+
+<hr />
+<section>
+<p>Want to join this list? Send an email to see how you can help.</p>
+
+<p>Also checkout the <a href="https://github.com/coderoad/atom-coderoad/blob/master/CONTRIBUTING.md">contributing guidelines</a>.</p>
+</section>

@@ -3,7 +3,8 @@
     {% for tutorial in site.categories.tutorials reversed %}
     <li>
         <h3>
-        <span style="color: yellow">{{tutorial.language}}</span> {{tutorial.title}}
+        <span style="color: yellow">{{tutorial.language}} </span>
+        <a href="{{tutorial.link}}">{{tutorial.title}}</a>
       </h3>
         <p>{{tutorial.content}}</p>
     </li>
