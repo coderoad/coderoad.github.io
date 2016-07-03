@@ -32,56 +32,36 @@ layout: landing
 <!-- Two -->
 <section id="two" class="wrapper alt style2">
 
-	<!-- Atom CodeRoad -->
+	<!-- Features -->
+	{% for feature in site.categories.features reversed %}
 	<section class="spotlight wide">
 		<div class="image" >
-			<a id="atom-coderoad" href="#atom-coderoad-demo" class="modal-link">
-				<img alt="Atom-CodeRoad Demo"
-				src="images/demos/atom-coderoad.jpg"/>
+			{% if feature.image.href %}
+			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
+				<img alt="{{feature.image.alt}}"
+				src="{{feature.image.src}}"
+				height="328px" width="574px"/>
 			</a>
+			{% else %}
+				<img alt="{{feature.image.alt}}"
+					src="{{feature.image.src}}"
+					height="328px" width="574px" />
+			{% endif %}
 		</div>
 
 		<div class="content">
-			<h2>Inside Your Code Editor</h2>
-
-			<p>CodeRoad is a free plugin for the popular
-				<a href="https://atom.io">Atom Editor</a>.
-				<br /> With the "atom-coderoad" plugin, code in a real editor environment alongside your other favorite plugins.</p>
+			<h2>{{feature.title}}</h2>
+			{{feature.content}}
+			{% if feature.actions %}
 			<ul class="actions">
-				<li><a href="/atom-coderoad.html" class="button special">Atom-CodeRoad</a></li>
+				{% for action in feature.actions %}
+				<li><a href="{{action.href}}" class="button special">{{action.title}}</a></li>
+				{% endfor %}
 			</ul>
+			{% endif %}
 		</div>
 	</section>
-
-	<!-- Builder-CodeRoad -->
-	<section class="spotlight wide">
-		<div class="image">
-			<a id="builder-coderoad" href="#builder-coderoad-demo" class="modal-link">
-				<img alt="Builder CodeRoad Demo"
-				src="images/demos/builder-demo.jpg" />
-			</a>
-		</div>
-		<div class="content">
-			<h2>Create your Own Tutorials</h2>
-			<p>Build tutorials using simple and familiar tools: <a href="//www.markdowntutorial.com/">Markdown</a> & unit tests. Making tutorials is easy with the new "builder-coderoad" plugin.</p>
-			<ul class="actions">
-				<li><a href="/builder-coderoad.html" class="button special">Builder-CodeRoad</a></li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- Publish -->
-	<section class="spotlight wide">
-		<div class="image">
-			<img alt="Publish Tutorial"
-			src="images/demos/publish.png" />
-		</div>
-		<div class="content">
-			<h2>Publish Free & Open</h2>
-			<p>Version control & share your tutorials over <a href="//npmjs.com">NPM</a>. Iterate and publish updates. Use Git to build & collaborate on courses.</p>
-		</div>
-	</section>
-</section>
+	{% endfor %}
 
 <!-- Three -->
 <section id="three" class="wrapper style3 special">
