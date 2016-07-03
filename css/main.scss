@@ -7,10 +7,12 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'animate-css';
 @import 'basic';
 @import 'font-awesome';
 @import 'code-blocks';
 @import 'modal';
 @import 'custom';
+
 
 @import url( '//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
