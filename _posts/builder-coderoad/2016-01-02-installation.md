@@ -12,12 +12,35 @@ To create a **tutorial**, you'll need **Builder-CodeRoad**.
 
 Builder CodeRoad has several key dependencies before starting:
 
-* *NodeJS* > 0.10.x. Check your version with `> node -v`.
-    - download a newer version [here](https://nodejs.org).
-* *NPM* 3.x+. Check your version with `> npm -v`.
-    - update with `> npm install -g npm`
-* *Atom Editor*
-    - available at [Atom.io](https://atom.io/)
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Min Version</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NodeJS</td>
+        <td>>0.10.x</td>
+        <td>Check your version with `> node -v`.<br />
+        Download the latest from <a href="//nodejs.org">nodejs.org</a>.</td>
+      </tr>
+      <tr>
+        <td>NPM</td>
+        <td>>3.x.x</td>
+        <td>Check your version with `> npm -v`.<br />NPM comes installed with NodeJS, and can be updated with `> npm install -g npm`.</td>
+      </tr>
+      <tr>
+        <td>Atom Editor</td>
+        <td>>1.6.0+</td>
+        <td>A popular code editor available at <a href="//atom.io">Atom.io</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Install
 

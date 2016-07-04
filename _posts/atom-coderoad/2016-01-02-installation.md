@@ -12,13 +12,36 @@ To play a **tutorial**, you'll only need **Atom-CodeRoad**.
 
 Atom CodeRoad has several key dependencies before starting:
 
-* **NodeJS** > 0.10.x. Check your version with `> node -v`.
-    - download a newer version [here](https://nodejs.org).
-* **NPM** 3.x+. Check your version with `> npm -v`.
-    - NPM comes installed with NodeJS
-    - update with `> npm install -g npm`
-* **Atom Editor**
-    - A popular code editor available at [Atom.io](https://atom.io/)
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Min Version</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NodeJS</td>
+        <td>>0.10.x</td>
+        <td>Check your version with `> node -v`.<br />
+        Download the latest from <a href="//nodejs.org">nodejs.org</a>.</td>
+      </tr>
+      <tr>
+        <td>NPM</td>
+        <td>>3.x.x</td>
+        <td>Check your version with `> npm -v`.<br />NPM comes installed with NodeJS, and can be updated with `> npm install -g npm`.</td>
+      </tr>
+      <tr>
+        <td>Atom Editor</td>
+        <td>>1.6.0+</td>
+        <td>A popular code editor available at <a href="//atom.io">Atom.io</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ### Install
 
@@ -37,9 +60,9 @@ To install a tutorial, setup a *package.json* file and save the tutorial as a de
 
 ![Install a Tutorial](/images/docs/install-tutorial.png){: .gif}
 
-You can setup a project quickly by typing `npm init --y` into the command line in your project's folder. This agrees to all of the defaults for your newly created *package.json* file.
+You can setup a project quickly by typing `> npm init --y` into the command line in your project's folder. This agrees to all of the defaults for your newly created *package.json* file.
 
-Now you can install a tutorial. Run `npm install --save-dev $THE-PACKAGE-NAME$` to save the tutorial as a package development dependency. If you run *Atom-CodeRoad* you should see the tutorial appear on the tutorial list screen.
+Now you can install a tutorial. Run `> npm install --save-dev $THE-PACKAGE-NAME$` to save the tutorial as a package development dependency. If you run *Atom-CodeRoad* you should see the tutorial appear on the tutorial list screen.
 
 > If you are stuck at a screen that says 'install a tutorial', try updating your version of NPM to 3.x+.
 
