@@ -6,4 +6,4 @@ categories:
 - builder-coderoad
 ---
 
-Coming soon...
+Builder-CodeRoad is an Atom editor plugin for creating interactive [Atom-CodeRoad](/atom-coderoad.html) tutorials. 
