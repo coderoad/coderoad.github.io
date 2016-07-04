@@ -7,6 +7,11 @@ layout: default
     <header>
         <h2>{{ page.title }}</h2>
         <p>{{ page.tagline }}</p>
+        {% if page.repo %}
+          <a target="_blank" href="{{ page.repo }}" class="icon fa-github fa-2x">
+            <span class="label">{{ page.title }} repo</span>
+          </a>
+        {% endif %}
     </header>
 
     <section class="wrapper style5">
