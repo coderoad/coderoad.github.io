@@ -1,9 +1,9 @@
 ---
 title: Test Examples
-id: test-examples
+link: test-examples
 file: 2016-01-06-test-examples.md
 categories:
-- docs
+- tutorial-docs
 ---
 
 Here are examples using *mocha* with *chai*'s *expect*. See the [Chai/Expect docs](http://chaijs.com/api/bdd/). Also keep in mind that most uses cases are covered by [test snippets](#test-snippets).

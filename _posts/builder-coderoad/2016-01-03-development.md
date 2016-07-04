@@ -1,6 +1,6 @@
 ---
 title: Development
-id: development
+link: development
 file: 2016-01-02-development.md
 categories:
 - builder-coderoad

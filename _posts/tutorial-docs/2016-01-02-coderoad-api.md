@@ -1,9 +1,9 @@
 ---
 title: CodeRoad API
-id: coderoad-API
+link: coderoad-API
 file: 2016-01-02-coderoad-api.md
 categories:
-- docs
+- tutorial-docs
 ---
 
 Of course Markdown couldn't cover all uses necessary for CodeRoad. Instead, there is a special **CodeRoad API** which is parsed into the data file whenever you run `> coderoad build`.

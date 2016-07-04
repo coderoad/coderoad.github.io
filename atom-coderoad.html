@@ -5,12 +5,4 @@ tagline: Play Interactive Tutorials
 repo: //github.com/coderoad/atom-coderoad
 ---
 
-{% for doc in site.categories.atom-coderoad reversed %}
-	{% include docs.html
-    id=doc.id
-		title=doc.title
-		content=doc.content
-		editPath="//github.com/coderoad/coderoad.github.io/edit/master/_posts/atom-coderoad"
-    file=doc.file
-	%}
-{% endfor %}
+{% include docs.html category="atom-coderoad" %}
