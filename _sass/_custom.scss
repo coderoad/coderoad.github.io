@@ -6,3 +6,14 @@
 .fa-2x:hover {
   opacity: 0.85;
 }
+
+.edit-docs {
+  float: right;
+}
+
+/* Portrait */
+@media (max-width: 850px) {
+  .edit-docs {
+    display: none;
+  }
+}

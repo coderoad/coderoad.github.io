@@ -1,13 +1,10 @@
 <br />
 <br />
 <section id="{{ include.id }}">
+  <a class="button edit-docs" href="{{ include.editPath }}/{{ include.file }}">
+    <i class="fa fa-pencil fa-fw"></i>
+    <span class="network-name">Edit</span>
+  </a>
   <h2>{{ include.title }}</h2>
   <div>{{ include.content }}</div>
-  <br>
-  <a class="button" href="{{ include.editPath }}/{{ include.file }}">
-    <i class="fa fa-pencil fa-fw"></i>
-    <span class="network-name">
-      Edit {{ include.title }} Docs
-    </span>
-  </a>
 </section>
