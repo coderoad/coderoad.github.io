@@ -6,13 +6,9 @@ categories:
 - builder-coderoad
 ---
 
-Get setup quickly with CodeRoad: either [clone a tutorial repo](https://git-scm.com/docs/git-clone) or use the *CodeRoad-CLI*.
+Get setup quickly with CodeRoad: open the **builder-coderoad** plugin in an empty directory.
 
-In your development directory, run **create** with your new package name.
-
-    > coderoad create $YOUR-PACKAGE-NAME$
-
-Running **create** generates:
+Filling out the first page should create:
 
 * an example **tutorial.md**, which imports several tutorial files
 * an example **test** directory with a few example tests
@@ -22,13 +18,11 @@ Running **create** generates:
 {
   "name": "coderoad-$TUTORIAL-NAME$",
   "version": "0.1.0",
-  "description": "Coderoad tutorial",
-  "author": "Name <email> (site)",
   "main": "coderoad.json",
-  "keywords": ["coderoad", "tutorial"],
-  "dependencies": {
-      "mocha-coderoad": "^0.3.1"
-  },
+  "keywords": [
+    "coderoad",
+    "tutorial"
+  ],
   "coderoad": {
       "dir": "tutorial",
       "testSuffix": ".spec.js",
@@ -37,11 +31,9 @@ Running **create** generates:
 }
 ```
 
-We'll learn more about these configurations when it's time to [publish](#publish).
+We'll learn more about these configurations when it's time to [publish](/tutorial-docs#publish).
 
-Update changes to your tutorial by running **build**. This will generate a *coderoad.json* data file used by *atom-coderoad*.
-
-    > coderoad build
+Changes will update whenever you save a file.
 
 ### Demo Your Tutorial
 
