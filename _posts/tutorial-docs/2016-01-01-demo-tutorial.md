@@ -1,41 +1,12 @@
 ---
-title: Development
-link: development
-file: 2016-01-02-development.md
+title: Demo Tutorial In Atom
+link: demo-tutorial
+file: 2016-01-01-demo-tutorial.md
 categories:
-- builder-coderoad
+- tutorial-docs
 ---
 
-Get setup quickly with CodeRoad: open the **builder-coderoad** plugin in an empty directory.
-
-Filling out the first page should create:
-
-* an example **tutorial.md**, which imports several tutorial files
-* an example **test** directory with a few example tests
-* a **package.json** configuration with some of the following settings:
-
-```json
-{
-  "name": "coderoad-$TUTORIAL-NAME$",
-  "version": "0.1.0",
-  "main": "coderoad.json",
-  "keywords": [
-    "coderoad",
-    "tutorial"
-  ],
-  "coderoad": {
-      "dir": "tutorial",
-      "testSuffix": ".spec.js",
-      "runner": "mocha-coderoad"
-  }
-}
-```
-
-We'll learn more about these configurations when it's time to [publish](/tutorial-docs#publish).
-
-Changes will update whenever you save a file.
-
-### Demo Your Tutorial
+### Demoing Your Tutorial
 
 Open a new directory for demoing your tutorial. Setup a new NPM project file.
 
