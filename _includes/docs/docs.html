@@ -3,16 +3,13 @@
 	<div class="doc-contents">
 		<h2>Contents</h2>
 		{% for doc in site.categories[include.category] reversed %}
-			{% include docs/doc-index.html
-				link=doc.link
-				title=doc.title
-				index=forloop.index
-			%}
+			<a href="#{{ doc.link }}" class="smooth">
+			  <h5>{{forloop.index}}. {{ doc.title }}</h5>
+			</a>
 		{% endfor %}
 	</div>
 
-  <hr />
-
+	<br />
 	<!-- Docs -->
   <div>
 	{% for doc in site.categories[include.category] reversed %}

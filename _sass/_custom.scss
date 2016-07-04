@@ -14,7 +14,11 @@ a.smooth:hover {
 }
 
 .doc-contents {
-  padding-left: 30px;
+  padding: 20px 50px;
+  background-color: _palette(border-bg);
+  border-radius: 3px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .doc-image {
