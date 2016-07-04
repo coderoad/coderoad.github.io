@@ -25,13 +25,13 @@ Builder CodeRoad has several key dependencies before starting:
       <tr>
         <td>NodeJS</td>
         <td>>0.10.x</td>
-        <td>Check your version with `> node -v`.<br />
+        <td>Check your version with <code>> node -v</code>.<br />
         Download the latest from <a href="//nodejs.org">nodejs.org</a>.</td>
       </tr>
       <tr>
         <td>NPM</td>
         <td>>3.x.x</td>
-        <td>Check your version with `> npm -v`.<br />NPM comes installed with NodeJS, and can be updated with `> npm install -g npm`.</td>
+        <td>Check your version with <code>> npm -v</code>.<br />NPM comes installed with NodeJS, and can be updated with <code>> npm install -g npm</code>.</td>
       </tr>
       <tr>
         <td>Atom Editor</td>
