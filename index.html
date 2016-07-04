@@ -14,6 +14,11 @@ layout: landing
 	<a href="#one" class="more scrolly">Learn More</a>
 </section>
 
+<style>
+/* Main */
+
+</style>
+
 <!-- One -->
 {% for summary in site.categories.summary %}
 <section id="one" class="wrapper style1 special">
@@ -38,7 +43,7 @@ layout: landing
 	{% for feature in site.categories.features reversed %}
 	<section class="spotlight wide">
 		<div class="image">
-			{% if feature.image.alt %}
+			{% if feature.image.href %}
 			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
 				<img alt="{{feature.image.alt}}" class="lazy"
 				src="{{feature.image.src}}"
