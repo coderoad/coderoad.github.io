@@ -6,4 +6,4 @@ categories:
 - atom-coderoad
 ---
 
-Coming soon...
+Atom-CodeRoad is an Atom plugin that lets you play interactive coding tutorials inside of your Atom editor. 
