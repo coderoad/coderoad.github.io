@@ -1102,7 +1102,7 @@ input[type="submit"] {
 		}
 	}
 	.close {
-		background-image: url('images/close.svg');
+		background-image: url('../images/icons/close.svg');
 		background-position: 4.85em 1em;
 		background-repeat: no-repeat;
 		border: 0;
@@ -1184,7 +1184,7 @@ body.is-menu-visible {
 						outline: 0;
 						position: relative;
 						&:after {
-							background-image: url('images/bars.svg');
+							background-image: url('../images/icons/bars.svg');
 							background-position: right center;
 							background-repeat: no-repeat;
 							content: '';
@@ -1286,7 +1286,7 @@ body.is-menu-visible {
 		width: 16em;
 		z-index: 1;
 		&:after {
-			background-image: url('images/arrow.svg');
+			background-image: url('../images/icons/arrow.svg');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -1396,4 +1396,4 @@ body.is-loading {
 #main {
 	> header {
 		@include padding(12em, 0);
-		@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url( "#{$baseurl}/banner.jpg")')); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center; h2 { font-size: 1.75em; margin: 0 0 (_size(element-margin) * 0.25) 0; } p { color: inherit; letter-spacing: _size(letter-spacing-alt); text-transform: uppercase; top: 0; a { color: inherit; } } @include breakpoint(xlarge) { @include padding(10em, 0); } @include breakpoint(large) { @include padding(8em, 3em); } @include breakpoint(medium) { @include padding(10em, 3em); } @include breakpoint(small) { @include padding(5em, 3em); h2 { font-size: 1.25em; margin: 0 0 (_size(element-margin) * 0.5) 0; } } } } body.is-mobile { #main { > header { background-attachment: scroll; } } } /* Footer */ #footer { @include padding(6em, 0); background-color: darken(_palette(bg), 8); text-align: center; .icons { font-size: 1.25em; a { color: _palette(fg-light); &:hover { color: _palette(fg); } } } .copyright { color: _palette(fg-light); font-size: 0.8em; letter-spacing: _size(letter-spacing-alt); list-style: none; padding: 0; text-transform: uppercase; li { border-left: solid 1px _palette(fg-light); display: inline-block; line-height: 1em; margin-left: 1em; padding-left: 1em; &:first-child { border-left: 0; margin-left: 0; padding-left: 0; } a { color: inherit; &:hover { color: _palette(fg); } } @include breakpoint(xsmall) { border: 0; display: block; line-height: 1.65em; margin: 0; padding: 0.5em 0; } } } @include breakpoint(medium) { @include padding(4em, 3em); } @include breakpoint(small) { @include padding(3em, 2em); } } /* Landing */ body.landing { #page-wrapper { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")')); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; padding-top: 0; } #footer { background-color: darken(transparentize(_palette(bg), 0.1), 8); } } body.is-mobile { &.landing { #page-wrapper { background: none; } #banner, .wrapper.style4 { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")')); background-position: center center; background-repeat: no-repeat; background-size: cover; } #footer { background-color: darken(_palette(bg), 8); } } };
+		@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url( "../images/banner.jpg")')); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center; h2 { font-size: 1.75em; margin: 0 0 (_size(element-margin) * 0.25) 0; } p { color: inherit; letter-spacing: _size(letter-spacing-alt); text-transform: uppercase; top: 0; a { color: inherit; } } @include breakpoint(xlarge) { @include padding(10em, 0); } @include breakpoint(large) { @include padding(8em, 3em); } @include breakpoint(medium) { @include padding(10em, 3em); } @include breakpoint(small) { @include padding(5em, 3em); h2 { font-size: 1.25em; margin: 0 0 (_size(element-margin) * 0.5) 0; } } } } body.is-mobile { #main { > header { background-attachment: scroll; } } } /* Footer */ #footer { @include padding(6em, 0); background-color: darken(_palette(bg), 8); text-align: center; .icons { font-size: 1.25em; a { color: _palette(fg-light); &:hover { color: _palette(fg); } } } .copyright { color: _palette(fg-light); font-size: 0.8em; letter-spacing: _size(letter-spacing-alt); list-style: none; padding: 0; text-transform: uppercase; li { border-left: solid 1px _palette(fg-light); display: inline-block; line-height: 1em; margin-left: 1em; padding-left: 1em; &:first-child { border-left: 0; margin-left: 0; padding-left: 0; } a { color: inherit; &:hover { color: _palette(fg); } } @include breakpoint(xsmall) { border: 0; display: block; line-height: 1.65em; margin: 0; padding: 0.5em 0; } } } @include breakpoint(medium) { @include padding(4em, 3em); } @include breakpoint(small) { @include padding(3em, 2em); } } /* Landing */ body.landing { #page-wrapper { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")')); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; padding-top: 0; } #footer { background-color: darken(transparentize(_palette(bg), 0.1), 8); } } body.is-mobile { &.landing { #page-wrapper { background: none; } #banner, .wrapper.style4 { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")')); background-position: center center; background-repeat: no-repeat; background-size: cover; } #footer { background-color: darken(_palette(bg), 8); } } };
