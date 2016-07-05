@@ -33,4 +33,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch(['js'], ['compress']);
+  gulp.watch(['_sass'], ['sass']);
+});
+
 gulp.task('default', ['compress', 'sass']);
