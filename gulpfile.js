@@ -3,6 +3,7 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
+const purify = require('gulp-purifycss');
 
 gulp.task('compress', function (cb) {
   pump([
@@ -25,6 +26,7 @@ gulp.task('compress', function (cb) {
 gulp.task('sass', function () {
   return gulp.src('./_sass/main.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(purify(['./js/**/*.js', '*.html', './_includes/**/*.html', './_layouts/**/*.html']))
     .pipe(gulp.dest('./dist'));
 });
 
