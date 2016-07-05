@@ -6,8 +6,17 @@ categories:
 - builder-coderoad
 ---
 
-To create a **tutorial**, you'll need **Builder-CodeRoad**.
+To install **builder-coderoad**, you have two options:
 
-You can install Atom packages inside of Atom through the following menus: "Atom -> Preferences -> Install", and search for "builder-coderoad".
+1. Inside of Atom, select the following menus:
 
-You may also choose to install *Atom Shell Commands* under the "Atom" menu. Shell commands allow you to quickly install Atom packages from the command line, for example: `> apm install builder-coderoad`.
+    * Atom
+      * Preferences
+        * Install
+          * search for "builder-coderoad"
+
+1. Use [Atom Shell Commands](https://atom.io/packages/atom-shell-commands).
+
+```shell
+> apm install builder-coderoad
+```
