@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 link: install
-file: 2016-01-02-installation.md
+file: 2016-01-03-installation.md
 categories:
 - atom-coderoad
 ---
