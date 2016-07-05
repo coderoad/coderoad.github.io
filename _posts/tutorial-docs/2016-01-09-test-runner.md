@@ -9,11 +9,12 @@ A CodeRoad test runner works by creating a child process and calling a test fram
 
 In this way, the test runner not only determines how unit tests will be written, but it actually determines the programming language used in the tutorial.
 
-> Any programming language can potentially be used with CodeRoad, you need only change the test runner.
+> Any programming language can potentially be used with CodeRoad, you need only change the test runner. This is possible because tests are called from the command line.
 
 ### Current Test Runners
 
-* Javascript: [*mocha-coderoad*](https://github.com/coderoad/mocha-coderoad)
+* Javascript: [*mocha-coderoad*](//github.com/coderoad/mocha-coderoad)
+* Python: [*pytest-coderoad*](//github.com/coderoad/pytest-coderoad)
 
 We need more test runners. Why not build one?
 
@@ -28,7 +29,8 @@ The test runner is called in *Atom-CodeRoad* with three ordered inputs, the fina
 See a brief example from the [*mocha-coderoad* runner](https://github.com/coderoad/mocha-coderoad/blob/master/src/runner.ts), as well as a code summary below:
 
 ```js
-export default function runner(testFile, config, handleResult) {
+// input: an object with keys of
+export default function runner({testString, config, handleResult}) {
   /* ... */
   handleResult(result); // returns test result
 }
@@ -36,12 +38,10 @@ export default function runner(testFile, config, handleResult) {
 
 Also notice that the runner in the above example handles any `console.log` statements. A special character string is added before the result, any data without that match is passed to the log.
 
-`console.dir` is used to make objects & arrays more accessible in the console.
-
 ```js
 if (!match) {
   try {
-    console.dir(JSON.parse(JSON.stringify(data)));
+    console.log(data);
   } catch (e) {
     console.log(data);
   }
@@ -49,11 +49,13 @@ if (!match) {
 }
 ```
 
-Let's look at these three test runner inputs in more detail.
+> In order to process the data correctly, CodeRoad overrides the console.log function with another function that parses the output and returns it's proper type.
 
-#### 1. testFile
+Let's look at these three test runner keys that are passed into the runner as an object:
 
-The absolute path to a file containing all concatenated page tests. Call your test framework with this file path.
+#### 1. testString
+
+A string with all test input. This includes unit tests, the user input from the text editor, and some helper functions behind the scenes.
 
 #### 2. config
 
