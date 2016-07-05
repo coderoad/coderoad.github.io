@@ -42,6 +42,7 @@ Defaults for loading tests are specified in the tutorial *package.json* file.
 ```json
 {
   "config": {
+    "language": "JS",
     "dir": "tutorial",
     "testSuffix": ".spec.js",
     "runner": "mocha-coderoad"
