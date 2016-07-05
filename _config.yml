@@ -8,17 +8,17 @@ owner: Shawn McKay
 first_published: 2016
 email: coderoad-app@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://coderoad.github.com
+url: //coderoad.github.com
 social:
-  twitter: https://twitter.com/coderoadapp
-  github: https://github.com/coderoad
+  twitter: //twitter.com/coderoadapp
+  github: //github.com/coderoad
   #linkedin-square: https://linkedin.com/in/<username>
   #facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/114957986906029613694/about
+  google-plus-square: //plus.google.com/114957986906029613694/about
   email: mailto:coderoadapp@gmail.com?subject=CodeRoad
   #flickr:
   #instagram:
-  youtube-square: https://www.youtube.com/channel/UCDDw5bc8muROZkT3IUqamPg
+  youtube-square: //www.youtube.com/channel/UCDDw5bc8muROZkT3IUqamPg
   #spotify:
   #stack-overflow:
   #vimeo:

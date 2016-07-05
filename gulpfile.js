@@ -13,6 +13,7 @@ gulp.task('compress', function (cb) {
           'js/lib/jquery.scrolly.min.js',
           'js/lib/animatedModal.min.js',
           'js/lib/png2gif.min.js',
+          'js/lib/jquery.sticky.js',
           'js/*.js',
           'ga/min.js'
         ]),
@@ -27,7 +28,7 @@ gulp.task('compress', function (cb) {
 gulp.task('sass', function () {
   return gulp.src('./_sass/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(purify(['./js/**/*.js', '*.html', './_includes/**/*.html', './_layouts/**/*.html']))
+    // .pipe(purify(['./js/**/*.js', '*.html', './_includes/**/*.html', './_layouts/**/*.html']))
     .pipe(cleanCSS())
     .pipe(gulp.dest('./dist'));
 });
