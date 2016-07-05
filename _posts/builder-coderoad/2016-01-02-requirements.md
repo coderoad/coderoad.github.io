@@ -3,7 +3,7 @@ title: Requirements
 link: requirements
 file: 2016-01-02-requirements.md
 categories:
-- atom-coderoad
+- builder-coderoad
 ---
 
 Atom-CodeRoad & Builder-CodeRoad both have several key dependencies before starting:
