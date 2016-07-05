@@ -1,3 +1,7 @@
+.spotlight > .code-block {
+  padding: 10px;
+}
+
 .wide {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -23,7 +27,7 @@ a.smooth:hover {
 
 .doc-image {
   border-radius: 3px;
-  max-width: 1024px;
+  max-width: 90%;
 }
 
 .edit-docs {
