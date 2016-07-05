@@ -14,4 +14,4 @@ categories:
 ---
 
 CodeRoad is a free plugin for the popular [Atom Editor]("https://atom.io").
-With the "atom-coderoad" plugin, code in a real editor environment alongside your other favorite plugins.
+With the "atom-coderoad" plugin, take tutorials in a real editor environment alongside your other favorite plugins.

@@ -8,7 +8,7 @@ categories:
 
 Of course Markdown couldn't cover all uses necessary for CodeRoad. Instead, there is a special **CodeRoad API** which is parsed into the data file whenever you run `> coderoad build`.
 
-For these API features to work, they must be placed at the beginning of a line.
+For these API features to work, they must be placed at the *beginning of a line*.
 
 ```markdown
 @import('file')           // ✓
@@ -32,7 +32,7 @@ Features can be commented out, allowing you to view different files at a time. B
 @import('./path/to/file.md')
 ```
 
-See an [example](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/tutorial.md).
+See an [example tutorial file](https://github.com/coderoad/coderoad-functional-school/blob/master/tutorial/tutorial.md).
 
 
 ### `@test`
