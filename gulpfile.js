@@ -7,7 +7,12 @@ const sass = require('gulp-sass');
 gulp.task('compress', function (cb) {
   pump([
         gulp.src([
-          'js/*.js'
+          'js/lib/jquery.scrollex.min.js',
+          'js/lib/jquery.scrolly.min.js',
+          'js/lib/animatedModal.min.js',
+          'js/lib/png2gif.min.js',
+          'js/*.js',
+          'ga/min.js'
         ]),
         concat('build.min.js'),
         uglify(),
