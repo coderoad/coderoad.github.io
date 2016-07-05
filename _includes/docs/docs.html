@@ -8,7 +8,7 @@
 				{% for doc in site.categories[include.category] reversed %}
 					<li>
 						<a href="#{{ doc.link }}" class="smooth">
-						  <h5>{{ doc.title }}</h5>
+						  <h5>{{forloop.index}}. {{ doc.title }}</h5>
 						</a>
 					</li>
 				{% endfor %}

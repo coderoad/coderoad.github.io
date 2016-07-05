@@ -1,11 +1,6 @@
 .doc-contents {
-  // padding: 10px 50px;
-  // background-color: rgba(27,43,52, 0.05);
-  border-radius: 3px;
-  margin: 0;
   max-width: 400px;
   list-style: none;
-  margin-left: 50px;
 }
 
 .doc-image {
@@ -20,5 +15,6 @@
 @media (min-width: 850px) {
   .doc-contents {
     font-size: 0.9em;
+    margin-left: 50px;
   }
 }
