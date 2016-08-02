@@ -62,7 +62,7 @@ it('should be {a: 42}', function () {
 it('should include the variable "count"', function () {
     var regex = new RegExp('count');
     var string = target.toString();
-    expect(string.match(regex)).to.be.true;
+    expect(string).to.match(regex);
 });
 ```
 
