@@ -12,7 +12,7 @@ Here are examples using *mocha* with *chai*'s *expect*. See the [Chai/Expect doc
 
 ```js
 it('doesn\'t exist', () => {
-    expect(target).to.be.defined;
+    expect(target).to.not.be.undefined;
 });
 ```
 
