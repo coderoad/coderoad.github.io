@@ -61,7 +61,8 @@ it('should be {a: 42}', () => {
 ```js
 it('should include the variable "count"', () => {
     const regex = new RegExp('count');
-    const string = target.toString();
+    // __text__ is an added property that provides the text version of the file
+    const string = target.__text__;
     expect(string).to.match(regex);
 });
 ```
@@ -70,7 +71,7 @@ it('should include the variable "count"', () => {
 it('should access the property "prop"', () => {
     const regex1 = /\.prop/;            // dot notation
     const regex2 = /\[["']prop["']\]/;  // bracket notation
-    const string = target.toString();
+    const string = target.__text__;
     const result = !!string.match(regex1) || !!string.match(regex2);
     expect(result).to.be.true;
 });
