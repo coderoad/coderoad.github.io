@@ -14,7 +14,6 @@ In this way, the test runner not only determines how unit tests will be written,
 ### Current Test Runners
 
 * Javascript: [*mocha-coderoad*](//github.com/coderoad/mocha-coderoad)
-* Python: [*pytest-coderoad*](//github.com/coderoad/pytest-coderoad)
 
 We need more test runners. Why not build one?
 

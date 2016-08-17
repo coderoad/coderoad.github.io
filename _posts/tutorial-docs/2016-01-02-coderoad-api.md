@@ -121,6 +121,27 @@ Add text to the bottom of the active text editor.
 ```))
 ```
 
+### write
+
+Write a file in the users project directory.
+File paths are relative to the users directory.
+
+```markdown
+@action(write('file.js', 'hello world!'))
+// writes to 'projectWorkingDirectory/file.js'
+```
+
+
+### writeFromFile
+
+Write a file to the users project directory by reading another file.
+
+```markdown
+@action(writeFromFile('file.js', 'data/example.js'))
+// reads from 'tutorial/data/example.js'
+// writes to 'projectWorkingDirectory/file.js'
+```
+
 #### ::>
 
 Set the cursor position.
