@@ -168,6 +168,10 @@ Page 1 description
 @onPageComplete('Next we'll look at page 2')
 ```
 
+### `## Final`
+
+Giving a page the title "Final" results in the content being presented in the outro.
+
 ### What's Next
 
 Further editor actions will be added to CodeRoad. These may include:
