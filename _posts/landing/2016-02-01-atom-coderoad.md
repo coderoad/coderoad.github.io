@@ -4,11 +4,8 @@ actions:
   - atom-coderoad:
     title: Atom-CodeRoad
     href: /atom-coderoad.html
-image:
-  id: atom-coderoad
-  href: atom-coderoad-demo
-  alt: Atom-CodeRoad Demo
-  src: images/demos/atom-coderoad.jpg
+video:
+  src: DbLpdgrYVOU
   height: 328px
   width: 574px
 categories:

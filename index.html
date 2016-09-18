@@ -41,6 +41,8 @@ layout: landing
 			{% if feature.image.href %}
 			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
 			{% endif %}
+
+      {% if feature.image %}
 				<img
           class="lazy"
           alt="{{feature.image.alt}}" 
@@ -48,6 +50,17 @@ layout: landing
 				  height="{{feature.image.height}}"
           width="{{feature.image.height}}"
         />
+      {% endif %}
+
+      {% if feature.video.src %}
+        <iframe
+          width="{{feature.video.width}}"
+          height="{{feature.video.height}}"
+          src="https://www.youtube.com/embed/{{feature.video.src}}"
+          frameborder="0"
+          allowfullscreen></iframe>
+      {% endif %}
+
 			{% if feature.image.href %}
 			</a>
 			{% endif %}
@@ -93,8 +106,3 @@ layout: landing
 		</ul>
 	</div>
 </section>
-
-
-<!-- modals -->
-{% include modal.html id="atom-coderoad-demo" title="Atom-CodeRoad" image="atom-coderoad.gif" %}
-{% include modal.html id="builder-coderoad-demo" title="Builder-CodeRoad" image="builder-demo.gif" %}
