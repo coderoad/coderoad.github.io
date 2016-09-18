@@ -41,9 +41,13 @@ layout: landing
 			{% if feature.image.href %}
 			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
 			{% endif %}
-				<img alt="{{feature.image.alt}}" class="lazy"
-				src="{{feature.image.src}}"
-				height="328px" width="574px"/>
+				<img
+          class="lazy"
+          alt="{{feature.image.alt}}" 
+				  src="{{feature.image.src}}"
+				  height="{{feature.image.height}}"
+          width="{{feature.image.height}}"
+        />
 			{% if feature.image.href %}
 			</a>
 			{% endif %}

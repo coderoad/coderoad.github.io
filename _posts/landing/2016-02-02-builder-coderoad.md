@@ -9,6 +9,8 @@ image:
   href: builder-coderoad-demo
   alt: Builder-CodeRoad Demo
   src: images/demos/builder-demo.jpg
+  height: 328px
+  width: 574px
 categories:
 - features
 ---

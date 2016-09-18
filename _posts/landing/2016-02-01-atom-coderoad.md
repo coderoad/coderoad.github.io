@@ -9,6 +9,8 @@ image:
   href: atom-coderoad-demo
   alt: Atom-CodeRoad Demo
   src: images/demos/atom-coderoad.jpg
+  height: 328px
+  width: 574px
 categories:
 - features
 ---
