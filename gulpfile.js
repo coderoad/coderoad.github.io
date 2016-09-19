@@ -11,7 +11,7 @@ gulp.task('compress', function (cb) {
         gulp.src([
           'js/lib/jquery.scrollex.min.js',
           'js/lib/jquery.scrolly.min.js',
-          'js/lib/animatedModal.min.js',
+          // 'js/lib/animatedModal.min.js',
           'js/lib/png2gif.min.js',
           'js/lib/jquery.sticky.js',
           'js/*.js',
