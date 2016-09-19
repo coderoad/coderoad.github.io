@@ -9,13 +9,8 @@ const cleanCSS = require('gulp-clean-css');
 gulp.task('compress', function (cb) {
   pump([
         gulp.src([
-          'js/lib/jquery.scrollex.min.js',
-          'js/lib/jquery.scrolly.min.js',
-          // 'js/lib/animatedModal.min.js',
-          'js/lib/png2gif.min.js',
-          'js/lib/jquery.sticky.js',
+          'js/lib/*.js',
           'js/*.js',
-          'ga/min.js'
         ]),
         concat('build.min.js'),
         uglify(),
