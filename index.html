@@ -35,50 +35,61 @@ layout: landing
 <section id="two" class="wrapper alt style2">
 
 	<!-- Features -->
-	{% for feature in site.categories.features reversed %}
-	<section class="spotlight wide">
+
+  <!-- Feature: Atom-CodeRoad -->
+  <section class="spotlight wide">
 		<div class="image">
-			{% if feature.image.href %}
-			<a id="{{feature.image.id}}" href="#{{feature.image.href}}" class="modal-link">
-			{% endif %}
-
-      {% if feature.image %}
-				<img
-          class="lazy"
-          alt="{{feature.image.alt}}" 
-				  src="{{feature.image.src}}"
-				  height="{{feature.image.height}}"
-          width="{{feature.image.height}}"
-        />
-      {% endif %}
-
-      {% if feature.video.src %}
         <iframe
-          width="{{feature.video.width}}"
-          height="{{feature.video.height}}"
-          src="https://www.youtube.com/embed/{{feature.video.src}}"
+          width="574px"
+          height="328px"
+          src="https://www.youtube.com/embed/DbLpdgrYVOU"
           frameborder="0"
           allowfullscreen></iframe>
-      {% endif %}
-
-			{% if feature.image.href %}
-			</a>
-			{% endif %}
-		</div>
-
-		<div class="content">
-			<h2>{{feature.title}}</h2>
-			{{feature.content}}
-			{% if feature.actions %}
-			<ul class="actions">
-				{% for action in feature.actions %}
-				<li><a href="{{action.href}}" class="button special">{{action.title}}</a></li>
-				{% endfor %}
+    </div>
+    <div class="content">
+			<h2>Tutorials in your Code Editor</h2>
+			CodeRoad is a free plugin for the popular [Atom Editor]("https://atom.io").
+      With the "atom-coderoad" plugin, take tutorials in a real editor environment alongside your other favorite plugins.
+			<ul class="actions" style="margin-top: 30px;">
+				<li><a href="/atom-coderoad.html" class="button special">Atom-CodeRoad</a></li>
 			</ul>
-			{% endif %}
 		</div>
-	</section>
-	{% endfor %}
+  </section>
+
+  <!-- Feature: Tutorial -->
+
+  <section class="spotlight wide">
+		<div class="image">
+      <center style="margin: 0 auto; text-transform: uppercase; letter-spacing: .225em; border: solid 1px white; border-radius: 5%; padding: 10px; width: 250px">
+        <strong>Tutorial</strong><br />
+        <span>=</span><br />
+        <span>Markdown</span><br />
+        <span>+</span><br />
+        <span>Unit Tests</span><br />
+        <span>+</span><br />
+        <span>Config</span>
+      </center>
+    </div>
+    <div class="content">
+			<h2>Create your Own Tutorials</h2>
+			Build tutorials using simple and familiar tools: Markdown & Unit Tests. Making tutorials is easy with the new Builder-CodeRoad plugin.
+			<ul class="actions" style="margin-top: 30px;">
+				<li><a href="/builder-coderoad.html" class="button special">Builder-CodeRoad</a></li>
+			</ul>
+		</div>
+  </section>
+
+  <!-- Feature: Publish -->
+
+  <section class="spotlight wide">
+		<div class="image">
+       <img alt="npm publish packages" src="images/landing/npm-logo.svg" height="100px" width="100px" />
+    </div>
+    <div class="content">
+			<h2>Publish Free & Open</h2>
+			Version control & share your tutorials over <a href="https://npmjs.com">NPM</a>. Iterate and publish updates. Use Git to build & collaborate on courses.
+		</div>
+  </section>
 
 <!-- Three -->
 <section id="three" class="wrapper style3 special">
@@ -87,9 +98,7 @@ layout: landing
 			<h2>Tutorials</h2>
 			<p>Interactive lessons = learning faster. Look forward to more tutorials in the near future.</p>
 		</header>
-
-			{% include tutorial-list.html %}
-
+		{% include tutorial-list.html %}
 	</div>
 </section>
 
